@@ -159,10 +159,6 @@
     align-self: center;
   }
 
-  .heading {
-    color: #1078ba;
-  }
-
   .heading h4 {
     animation: slideInLeft 0.8s ease-in;
     font-size: clamp(1rem, calc(1.35vw + 5rem), 2.1rem);
@@ -172,6 +168,7 @@
   .heading h1 {
     animation: slideInLeft 1s ease-in;
     font-size: clamp(1rem, calc(5vw + 1rem), 3rem);
+    color: #1078ba;
   }
 
   .heading p {
