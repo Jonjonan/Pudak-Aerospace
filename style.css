@@ -462,7 +462,6 @@ main {
 }
 
 .heading {
-  border: 0.1rem solid red;
   justify-self: center;
   padding-right: 5rem;
 }
@@ -745,7 +744,6 @@ main {
 }
 
 .cards h1 {
-  border: 0.1rem solid red;
   font-size: 10rem;
 }
 
