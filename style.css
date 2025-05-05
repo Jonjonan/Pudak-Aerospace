@@ -324,7 +324,6 @@ html {
 }
 
 body {
-  border: 0.1rem solid red;
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
@@ -355,7 +354,6 @@ header {
   gap: 32rem;
   background-color: #f9f9f9;
   box-shadow: 0rem 0.06rem 0.3rem rgba(0, 0, 0, 0.08);
-  border: 0.1rem solid red;
 }
 
 .header__logo a {
@@ -449,7 +447,6 @@ li a {
 /* CONTENT */
 
 main {
-  border: 0.1rem solid purple;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -458,7 +455,6 @@ main {
 }
 
 #s1 {
-  border: 0.1rem solid red;
   width: 79rem;
   display: flex;
   align-self: center;
@@ -531,7 +527,6 @@ main {
 
 
 #s2 {
-  border: 0.1rem solid red;
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -613,7 +608,6 @@ main {
 
 
 #s3 {
-  border: 0.1rem solid red;
   background: linear-gradient(to bottom, 
   rgba(16, 120, 186, 0),  /* Transparent at the start */
   rgba(16, 120, 186, 0.2),/* Solid color in the middle */
@@ -680,7 +674,6 @@ main {
 
 
 #s4 {
-  border: 0.1rem solid red;
   padding-block: 2rem;
   display: flex;
   align-items: center;
@@ -703,7 +696,6 @@ main {
 
 
 #partner {
-  border: 0.1rem solid red;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -722,7 +714,6 @@ main {
 
 
 #testimony {
-  border: 0.1rem solid red;
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -732,7 +723,6 @@ main {
 }
 
 .grid__testimony {
-  border: 0.1rem solid red;
   padding-block: 2rem;
   gap: 1.5rem;
   display: grid;
@@ -786,7 +776,6 @@ main {
 /* Footer */
 
 footer {
-  border: 0.1rem solid red;
   display: flex;
   flex-direction: column;
   justify-content: center;
