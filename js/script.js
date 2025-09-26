@@ -81,7 +81,24 @@ const translations = {
     certificate_footer: "Certificate",
     certifications_for_title: "Certifications for<br><span>Pudak Aerospace</span>",
     back_to_top: "↑ Back to top",
-    copyright: "&copy; PT PUDAK SCIENTIFIC © 2025 All Rights Reserved"
+    copyright: "&copy; PT PUDAK SCIENTIFIC © 2025 All Rights Reserved",
+    // Modal translations
+    modal_close: "X Close",
+    modal_manufacture_title: "Manufacture 4.0",
+    modal_manufacture_subtitle: "Driving the Future of Smart Manufacturing",
+    modal_manufacture_p1: "With more than 20 years of expertise in aerospace parts manufacturing, Pudak Aerospace is embracing the future through Manufacture 4.0. Starting in mid-2024, we began integrating digitalization and automation across every division, step by step, to transform our operations. This shift toward smart manufacturing enables us to improve efficiency, precision, and innovation at every stage of production. Our goal is to fully modernize our processes, ensuring we stay ahead in the aerospace industry while delivering superior quality and performance for our customers.",
+    modal_manufacture_p2: "Our journey toward digital transformation is powered by two key innovations:",
+    modal_manufacture_h4_1: "Odoo ERP Integration",
+    modal_manufacture_p3: "We have implemented Odoo as our central digital platform to streamline operations, improve efficiency, and ensure real-time data visibility across all departments.",
+    modal_manufacture_h4_2: "Sentry: Our Digital Transformation Platform",
+    modal_manufacture_p4: "To further support modern manufacturing, we developed Sentry, a proprietary platform designed to enhance connectivity, improve workflow automation, and drive continuous improvement across our processes.",
+    modal_manufacture_p5: "By combining Odoo ERP and Sentry, we are shaping a smarter, more efficient, and environmentally responsible future for our manufacturing operations.",
+    modal_precision_title: "Precision Our Passion",
+    modal_precision_subtitle: "Passion",
+    modal_precision_p1: "At Pudak Aerospace, precision is more than just a goal—it's our passion. Every step of our manufacturing process, from concept and design to production and final inspection, is driven by an uncompromising commitment to accuracy and reliability, ensuring every aerospace part we produce exceeds industry standards.",
+    modal_precision_p2: "Embracing the era of Industry 4.0, we integrate cutting-edge digital technologies such as advanced CAD/CAM systems, real-time data monitoring, and automated quality control to enhance every aspect of production. These innovations allow us to achieve unmatched consistency, reduce lead times, and maintain full traceability across the manufacturing cycle.",
+    modal_precision_p3: "By combining our engineering expertise with digitalization, we not only improve efficiency but also ensure that each component meets the rigorous demands of modern aerospace engineering. This forward-thinking approach enables us to deliver solutions that not only meet today's requirements but also anticipate the needs of tomorrow's aerospace industry.",
+    modal_precision_p4: "Above all, our mission goes beyond manufacturing. We are dedicated to building long-term partnerships with our clients, understanding their unique challenges, and delivering precision-driven solutions that empower them to reach new heights."
   },
   id: {
     nav_about: "Tentang",
@@ -162,7 +179,24 @@ const translations = {
     certificate_footer: "Sertifikat",
     certifications_for_title: "Sertifikasi untuk<br><span>Pudak Aerospace</span>",
     back_to_top: "↑ Kembali ke atas",
-    copyright: "&copy; PT PUDAK SCIENTIFIC © 2025 Hak Cipta Dilindungi Undang-Undang"
+    copyright: "&copy; PT PUDAK SCIENTIFIC © 2025 Hak Cipta Dilindungi Undang-Undang",
+    // Modal translations
+    modal_close: "X Tutup",
+    modal_manufacture_title: "Manufaktur 4.0",
+    modal_manufacture_subtitle: "Mendorong Masa Depan Manufaktur Cerdas",
+    modal_manufacture_p1: "Dengan pengalaman lebih dari 20 tahun di bidang manufaktur suku cadang dirgantara, Pudak Aerospace menyongsong masa depan melalui Manufaktur 4.0. Mulai pertengahan 2024, kami mulai mengintegrasikan digitalisasi dan otomatisasi di setiap divisi, selangkah demi selangkah, untuk mengubah operasi kami. Pergeseran menuju manufaktur cerdas ini memungkinkan kami untuk meningkatkan efisiensi, presisi, dan inovasi di setiap tahap produksi. Tujuan kami adalah untuk memodernisasi sepenuhnya proses kami, memastikan kami tetap terdepan dalam industri dirgantara sambil memberikan kualitas dan kinerja yang unggul bagi pelanggan kami.",
+    modal_manufacture_p2: "Perjalanan kami menuju transformasi digital didukung oleh dua inovasi utama:",
+    modal_manufacture_h4_1: "Integrasi Odoo ERP",
+    modal_manufacture_p3: "Kami telah mengimplementasikan Odoo sebagai platform digital pusat kami untuk merampingkan operasi, meningkatkan efisiensi, dan memastikan visibilitas data waktu nyata di semua departemen.",
+    modal_manufacture_h4_2: "Sentry: Platform Transformasi Digital Kami",
+    modal_manufacture_p4: "Untuk lebih mendukung manufaktur modern, kami mengembangkan Sentry, sebuah platform berpemilik yang dirancang untuk meningkatkan konektivitas, meningkatkan otomatisasi alur kerja, dan mendorong perbaikan berkelanjutan di seluruh proses kami.",
+    modal_manufacture_p5: "Dengan menggabungkan Odoo ERP dan Sentry, kami membentuk masa depan operasi manufaktur yang lebih cerdas, lebih efisien, dan bertanggung jawab terhadap lingkungan.",
+    modal_precision_title: "Presisi Gairah Kami",
+    modal_precision_subtitle: "Gairah",
+    modal_precision_p1: "Di Pudak Aerospace, presisi lebih dari sekadar tujuan—itu adalah gairah kami. Setiap langkah proses manufaktur kami, mulai dari konsep dan desain hingga produksi dan inspeksi akhir, didorong oleh komitmen tanpa kompromi terhadap akurasi dan keandalan, memastikan setiap bagian dirgantara yang kami produksi melebihi standar industri.",
+    modal_precision_p2: "Merangkul era Industri 4.0, kami mengintegrasikan teknologi digital mutakhir seperti sistem CAD/CAM canggih, pemantauan data waktu nyata, dan kontrol kualitas otomatis untuk menyempurnakan setiap aspek produksi. Inovasi-inovasi ini memungkinkan kami untuk mencapai konsistensi yang tak tertandingi, mengurangi waktu tunggu, dan menjaga ketertelusuran penuh di seluruh siklus manufaktur.",
+    modal_precision_p3: "Dengan menggabungkan keahlian teknik kami dengan digitalisasi, kami tidak hanya meningkatkan efisiensi tetapi juga memastikan bahwa setiap komponen memenuhi tuntutan ketat dari rekayasa dirgantara modern. Pendekatan berwawasan ke depan ini memungkinkan kami untuk memberikan solusi yang tidak hanya memenuhi persyaratan hari ini tetapi juga mengantisipasi kebutuhan industri dirgantara masa depan.",
+    modal_precision_p4: "Di atas segalanya, misi kami lebih dari sekadar manufaktur. Kami berdedikasi untuk membangun kemitraan jangka panjang dengan klien kami, memahami tantangan unik mereka, dan memberikan solusi berbasis presisi yang memberdayakan mereka untuk mencapai ketinggian baru."
   }
 };
 
@@ -202,6 +236,103 @@ document.addEventListener('DOMContentLoaded', () => {
         const prefix = originalText.match(/^[<]*/)?.[0] || '';
         const suffix = originalText.match(/[+>]*$/)?.[0] || '';
         valueElement.innerHTML = prefix + '0' + suffix;
+    });
+
+    // --- MODAL LOGIC ---
+    const readMoreManufacturingBtn = document.getElementById('read-more-manufacturing');
+    const readMorePrecisionBtn = document.getElementById('read-more-precision');
+    const readMoreCncBtn = document.getElementById('read-more-cnc');
+    const readMoreEdmBtn = document.getElementById('read-more-edm');
+    const readMoreMpiBtn = document.getElementById('read-more-mpi');
+
+    const modalManufacturing = document.getElementById('modal-manufacturing');
+    const modalPrecision = document.getElementById('modal-precision');
+    const modalCnc = document.getElementById('modal-cnc');
+    const modalEdm = document.getElementById('modal-edm');
+    const modalMpi = document.getElementById('modal-mpi');
+
+    const closeModalManufacturing = document.getElementById('close-manufacturing');
+    const closeModalPrecision = document.getElementById('close-precision');
+    const closeModalCnc = document.getElementById('close-cnc');
+    const closeModalEdm = document.getElementById('close-edm');
+    const closeModalMpi = document.getElementById('close-mpi');
+
+
+    const openModal = (modal) => {
+        modal.style.display = 'flex';
+        document.body.classList.add('modal-open');
+    }
+
+    const closeModal = (modal) => {
+        modal.style.display = 'none';
+        document.body.classList.remove('modal-open');
+    }
+
+    readMoreManufacturingBtn.addEventListener('click', () => {
+        openModal(modalManufacturing);
+    });
+
+    readMorePrecisionBtn.addEventListener('click', () => {
+        openModal(modalPrecision);
+    });
+
+    readMoreCncBtn.addEventListener('click', () => {
+        openModal(modalCnc);
+    });
+
+    readMoreEdmBtn.addEventListener('click', () => {
+        openModal(modalEdm);
+    });
+
+    readMoreMpiBtn.addEventListener('click', () => {
+        openModal(modalMpi);
+    });
+
+
+    closeModalManufacturing.addEventListener('click', () => {
+        closeModal(modalManufacturing);
+    });
+
+    closeModalPrecision.addEventListener('click', () => {
+        closeModal(modalPrecision);
+    });
+
+    closeModalCnc.addEventListener('click', () => {
+        closeModal(modalCnc);
+    });
+
+    closeModalEdm.addEventListener('click', () => {
+        closeModal(modalEdm);
+    });
+
+    closeModalMpi.addEventListener('click', () => {
+        closeModal(modalMpi);
+    });
+    
+    // Close modal if overlay is clicked
+    window.addEventListener('click', (event) => {
+        if (event.target === modalManufacturing) {
+            closeModal(modalManufacturing);
+        }
+        if (event.target === modalPrecision) {
+            closeModal(modalPrecision);
+        }
+        if (event.target === modalCnc) {
+            closeModal(modalCnc);
+        }
+        if (event.target === modalEdm) {
+            closeModal(modalEdm);
+        }
+        if (event.target === modalMpi) {
+            closeModal(modalMpi);
+        }
+    });
+
+    // --- SMOOTH SCROLL FOR EXPLORE BUTTON ---
+    const exploreBtn = document.getElementById('explore-btn');
+    exploreBtn.addEventListener('click', () => {
+        const servicesSection = document.getElementById('services');
+        servicesSection.scrollIntoView({ behavior: 'smooth' });
     });
 });
 
