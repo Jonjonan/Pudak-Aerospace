@@ -82,6 +82,7 @@ const translations = {
     certifications_for_title: "Certifications for<br><span>Pudak Aerospace</span>",
     back_to_top: "↑ Back to top",
     copyright: "&copy; PT PUDAK SCIENTIFIC © 2025 All Rights Reserved",
+
     // Modal translations
     modal_close: "X Close",
     modal_manufacture_title: "Manufacture 4.0",
@@ -244,95 +245,66 @@ document.addEventListener('DOMContentLoaded', () => {
     const readMoreCncBtn = document.getElementById('read-more-cnc');
     const readMoreEdmBtn = document.getElementById('read-more-edm');
     const readMoreMpiBtn = document.getElementById('read-more-mpi');
+    const openCertificateBtn = document.getElementById('openCertificate');
+    const openPartnerBtn = document.getElementById('openPartner');
+
 
     const modalManufacturing = document.getElementById('modal-manufacturing');
     const modalPrecision = document.getElementById('modal-precision');
     const modalCnc = document.getElementById('modal-cnc');
     const modalEdm = document.getElementById('modal-edm');
     const modalMpi = document.getElementById('modal-mpi');
+    const certificateModal = document.getElementById('certificateModal');
+    const partnerModal = document.getElementById('partnerModal')
 
     const closeModalManufacturing = document.getElementById('close-manufacturing');
     const closeModalPrecision = document.getElementById('close-precision');
     const closeModalCnc = document.getElementById('close-cnc');
     const closeModalEdm = document.getElementById('close-edm');
     const closeModalMpi = document.getElementById('close-mpi');
+    const closeCertificate = document.getElementById('closeCertificate');
+    const closePartnerModal = document.getElementById('closePartnerModal');
 
 
     const openModal = (modal) => {
-        modal.style.display = 'flex';
-        document.body.classList.add('modal-open');
+        if (modal) {
+            modal.style.display = 'flex';
+            document.body.classList.add('modal-open');
+        }
     }
 
     const closeModal = (modal) => {
-        modal.style.display = 'none';
-        document.body.classList.remove('modal-open');
+        if (modal) {
+            modal.style.display = 'none';
+            document.body.classList.remove('modal-open');
+        }
     }
 
-    readMoreManufacturingBtn.addEventListener('click', () => {
-        openModal(modalManufacturing);
-    });
+    if(readMoreManufacturingBtn) readMoreManufacturingBtn.addEventListener('click', () => openModal(modalManufacturing));
+    if(readMorePrecisionBtn) readMorePrecisionBtn.addEventListener('click', () => openModal(modalPrecision));
+    if(readMoreCncBtn) readMoreCncBtn.addEventListener('click', () => openModal(modalCnc));
+    if(readMoreEdmBtn) readMoreEdmBtn.addEventListener('click', () => openModal(modalEdm));
+    if(readMoreMpiBtn) readMoreMpiBtn.addEventListener('click', () => openModal(modalMpi));
+    if(openCertificateBtn) openCertificateBtn.addEventListener('click', () => openModal(certificateModal));
+    if(openPartnerBtn) openPartnerBtn.addEventListener('click', () => openModal(partnerModal))
 
-    readMorePrecisionBtn.addEventListener('click', () => {
-        openModal(modalPrecision);
-    });
-
-    readMoreCncBtn.addEventListener('click', () => {
-        openModal(modalCnc);
-    });
-
-    readMoreEdmBtn.addEventListener('click', () => {
-        openModal(modalEdm);
-    });
-
-    readMoreMpiBtn.addEventListener('click', () => {
-        openModal(modalMpi);
-    });
-
-
-    closeModalManufacturing.addEventListener('click', () => {
-        closeModal(modalManufacturing);
-    });
-
-    closeModalPrecision.addEventListener('click', () => {
-        closeModal(modalPrecision);
-    });
-
-    closeModalCnc.addEventListener('click', () => {
-        closeModal(modalCnc);
-    });
-
-    closeModalEdm.addEventListener('click', () => {
-        closeModal(modalEdm);
-    });
-
-    closeModalMpi.addEventListener('click', () => {
-        closeModal(modalMpi);
-    });
+    if(closeModalManufacturing) closeModalManufacturing.addEventListener('click', () => closeModal(modalManufacturing));
+    if(closeModalPrecision) closeModalPrecision.addEventListener('click', () => closeModal(modalPrecision));
+    if(closeModalCnc) closeModalCnc.addEventListener('click', () => closeModal(modalCnc));
+    if(closeModalEdm) closeModalEdm.addEventListener('click', () => closeModal(modalEdm));
+    if(closeModalMpi) closeModalMpi.addEventListener('click', () => closeModal(modalMpi));
+    if(closeCertificate) closeCertificate.addEventListener('click', () => closeModal(certificateModal));
+    if(closePartnerModal) closePartnerModal.addEventListener('click', () => closeModal(partnerModal));
     
     // Close modal if overlay is clicked
     window.addEventListener('click', (event) => {
-        if (event.target === modalManufacturing) {
-            closeModal(modalManufacturing);
-        }
-        if (event.target === modalPrecision) {
-            closeModal(modalPrecision);
-        }
-        if (event.target === modalCnc) {
-            closeModal(modalCnc);
-        }
-        if (event.target === modalEdm) {
-            closeModal(modalEdm);
-        }
-        if (event.target === modalMpi) {
-            closeModal(modalMpi);
-        }
-    });
-
-    // --- SMOOTH SCROLL FOR EXPLORE BUTTON ---
-    const exploreBtn = document.getElementById('explore-btn');
-    exploreBtn.addEventListener('click', () => {
-        const servicesSection = document.getElementById('services');
-        servicesSection.scrollIntoView({ behavior: 'smooth' });
+        if (event.target === modalManufacturing) closeModal(modalManufacturing);
+        if (event.target === modalPrecision) closeModal(modalPrecision);
+        if (event.target === modalCnc) closeModal(modalCnc);
+        if (event.target === modalEdm) closeModal(modalEdm);
+        if (event.target === modalMpi) closeModal(modalMpi);
+        if (event.target === certificateModal) closeModal(certificateModal);
+        if (event.target === partnerModal) closeModal(partnerModal)
     });
 });
 
@@ -509,3 +481,21 @@ ScrollTrigger.create({
   },
   once: true
 });
+
+// === HAMBURGER MENU ===
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("navMenu");
+
+if (hamburger && navMenu) {
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+  });
+
+  document.querySelectorAll(".nav-menu a").forEach(link => {
+    link.addEventListener("click", () => {
+      hamburger.classList.remove("active");
+      navMenu.classList.remove("active");
+    });
+  });
+}
