@@ -1,3 +1,4 @@
+
       <!DOCTYPE html>
       <html lang="en">
       <head>
@@ -28,7 +29,7 @@
                 <li><a href="#certificate" data-key="nav_certificate">Certificate</a></li>
               </ul>
               <div class="nav-actions">
-                <button class="partner-btn" data-key="partner_btn">Become Partner</button>
+                <button id="openPartner" class="partner-btn" data-key="partner_btn">Become Partner</button>
                 <div class="lang-toggle" id="langToggle">ID</div>
               </div>
             </nav>
@@ -45,8 +46,10 @@
                     <p data-key="as9100">an <strong>AS9100</strong> Certified Company.</p>
                 </div>
                 <div class="footer-column-3">
+                  <a href="#services">
                     <button class="btn-primary" id="explore-btn" data-key="explore_btn">Explore Our Service →</button>
-                    <button class="btn-secondary" data-key="certificate_btn">Our Certificate</button>
+                  </a>
+                    <button id="openCertificate" class="btn-secondary" data-key="certificate_btn">Our Certificate</button>
                 </div>
             </div>
           </div>
@@ -62,7 +65,7 @@
                 <img src="assets/img/full-plane.webp" alt="Airplane" class="airplane-img">
                 <div class="service-item" id="service-1">
                     <div class="service-img-container">
-                        <img src="https://images.pexels.com/photos/8346143/pexels-photo-8346143.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Precision Machining">
+                        <img src="assets/img/precision-machining.webp" alt="Precision Machining">
                     </div>
                     <div class="service-text">
                         <h3 data-key="precision_machining_title">Precision Machining</h3>
@@ -71,7 +74,7 @@
                 </div>
                 <div class="service-item" id="service-2">
                     <div class="service-img-container">
-                        <img src="https://images.pexels.com/photos/416405/pexels-photo-416405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Assembly">
+                        <img src="assets/img/assembly.webp" alt="Assembly">
                     </div>
                     <div class="service-text">
                         <h3 data-key="assembly_title">Assembly</h3>
@@ -80,7 +83,7 @@
                 </div>
                 <div class="service-item" id="service-3">
                     <div class="service-img-container">
-                        <img src="https://images.pexels.com/photos/288100/pexels-photo-288100.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Surface Treatment">
+                        <img src="assets/img/surface.webp" alt="Surface Treatment">
                     </div>
                     <div class="service-text">
                         <h3 data-key="surface_treatment_title">Surface Treatment</h3>
@@ -89,7 +92,7 @@
                 </div>
                 <div class="service-item" id="service-4">
                     <div class="service-img-container">
-                        <img src="https://images.pexels.com/photos/5927976/pexels-photo-5927976.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Heat Treatment">
+                        <img src="assets/img/heat.webp" alt="Heat Treatment">
                     </div>
                     <div class="service-text">
                         <h3 data-key="heat_treatment_title">Heat Treatment</h3>
@@ -98,7 +101,7 @@
                 </div>
                 <div class="service-item" id="service-5">
                     <div class="service-img-container">
-                        <img src="https://images.pexels.com/photos/8386657/pexels-photo-8386657.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Quality Inspection">
+                        <img src="assets/img/quality.webp" alt="Quality Inspection">
                     </div>
                     <div class="service-text">
                         <h3 data-key="quality_inspection_title">Quality Inspection</h3>
@@ -121,11 +124,11 @@
                 <p><strong>Adaptor</strong></p>
                 <p>9963-2</p>
               </div><div class="card__small">
-                <img src="assets/img/case_actuator.webp" alt="Part Machine">
+                <img src="assets/img/case.webp" alt="Part Machine">
                 <p><strong>Case Actuator</strong></p>
                 <p>86133-81</p>
               </div><div class="card__small">
-                <img src="assets/img/support_isolant.webp" alt="Part Machine">
+                <img src="assets/img/support.webp" alt="Part Machine">
                 <p><strong>Support Isolant</strong></p>
                 <p>494623164-A</p>
               </div><div class="card__small">
@@ -133,24 +136,24 @@
                 <p><strong>Nut</strong></p>
                 <p>CH3123-0167</p>
               </div><div class="card__small">
-                <img src="assets/img/spindle_assy.webp" alt="Part Machine">
-                <p><strong>Spindle Assy</strong></p>
+                <img src="assets/img/gimbal.webp" alt="Part Machine">
+                <p><strong>Gimbal & Bush</strong></p>
                 <p>00PD3830-00</p>
               </div><div class="card__small">
-                <img src="assets/img/spindle_assy.webp" alt="Part Machine">
-                <p><strong>Spindle Assy</strong></p>
+                <img src="assets/img/spindle.webp" alt="Part Machine">
+                <p><strong>Sub Assy Spindle A</strong></p>
                 <p>00PD3830-00</p>
               </div><div class="card__small">
-                <img src="assets/img/spindle_assy.webp" alt="Part Machine">
-                <p><strong>Spindle Assy</strong></p>
+                <img src="assets/img/retaining.webp" alt="Part Machine">
+                <p><strong>Retaining Bearing & Seal</strong></p>
                 <p>00PD3830-00</p>
               </div><div class="card__small">
-                <img src="assets/img/spindle_assy.webp" alt="Part Machine">
-                <p><strong>Spindle Assy</strong></p>
-                <p>00PD3830-00</p>
+                <img src="assets/img/door.webp" alt="Part Machine">
+                <p><strong>Door</strong></p>
+                <p>GLS9845-2 A</p>
               </div><div class="card__small">
-                <img src="assets/img/spindle_assy.webp" alt="Part Machine">
-                <p><strong>Spindle Assy</strong></p>
+                <img src="assets/img/cover.webp" alt="Part Machine">
+                <p><strong>Cover Bearing</strong></p>
                 <p>00PD3830-00</p>
               </div>
             </div>
@@ -162,40 +165,40 @@
                 <p>00PD3830-00</p>
               </div>
               <div class="card__small">
-                <img src="assets/img/spindle_assy.webp" alt="Part Machine">
-                <p><strong>Spindle Assy</strong></p>
+                <img src="assets/img/adaptor.webp" alt="Part Machine">
+                <p><strong>Adaptor</strong></p>
+                <p>9963-2</p>
+              </div><div class="card__small">
+                <img src="assets/img/case.webp" alt="Part Machine">
+                <p><strong>Case Actuator</strong></p>
+                <p>86133-81</p>
+              </div><div class="card__small">
+                <img src="assets/img/support.webp" alt="Part Machine">
+                <p><strong>Support Isolant</strong></p>
+                <p>494623164-A</p>
+              </div><div class="card__small">
+                <img src="assets/img/nut.webp" alt="Part Machine">
+                <p><strong>Nut</strong></p>
+                <p>CH3123-0167</p>
+              </div><div class="card__small">
+                <img src="assets/img/gimbal.webp" alt="Part Machine">
+                <p><strong>Gimbal & Bush</strong></p>
                 <p>00PD3830-00</p>
               </div><div class="card__small">
-                <img src="assets/img/spindle_assy.webp" alt="Part Machine">
-                <p><strong>Spindle Assy</strong></p>
+                <img src="assets/img/spindle.webp" alt="Part Machine">
+                <p><strong>Sub Assy Spindle A</strong></p>
                 <p>00PD3830-00</p>
               </div><div class="card__small">
-                <img src="assets/img/spindle_assy.webp" alt="Part Machine">
-                <p><strong>Spindle Assy</strong></p>
+                <img src="assets/img/retaining.webp" alt="Part Machine">
+                <p><strong>Retaining Bearing & Seal</strong></p>
                 <p>00PD3830-00</p>
               </div><div class="card__small">
-                <img src="assets/img/spindle_assy.webp" alt="Part Machine">
-                <p><strong>Spindle Assy</strong></p>
-                <p>00PD3830-00</p>
+                <img src="assets/img/door.webp" alt="Part Machine">
+                <p><strong>Door</strong></p>
+                <p>GLS9845-2 A</p>
               </div><div class="card__small">
-                <img src="assets/img/spindle_assy.webp" alt="Part Machine">
-                <p><strong>Spindle Assy</strong></p>
-                <p>00PD3830-00</p>
-              </div><div class="card__small">
-                <img src="assets/img/spindle_assy.webp" alt="Part Machine">
-                <p><strong>Spindle Assy</strong></p>
-                <p>00PD3830-00</p>
-              </div><div class="card__small">
-                <img src="assets/img/spindle_assy.webp" alt="Part Machine">
-                <p><strong>Spindle Assy</strong></p>
-                <p>00PD3830-00</p>
-              </div><div class="card__small">
-                <img src="assets/img/spindle_assy.webp" alt="Part Machine">
-                <p><strong>Spindle Assy</strong></p>
-                <p>00PD3830-00</p>
-              </div><div class="card__small">
-                <img src="assets/img/spindle_assy.webp" alt="Part Machine">
-                <p><strong>Spindle Assy</strong></p>
+                <img src="assets/img/cover.webp" alt="Part Machine">
+                <p><strong>Cover Bearing</strong></p>
                 <p>00PD3830-00</p>
               </div>
             </div>
@@ -302,24 +305,39 @@
         <!-- Core Capabilities Section -->
         <section class="core-capabilities">
           <div class="capability-card" id="read-more-cnc">
+              <div class="capability-detail">High Precision</div>
+              <div class="capability-footer">
+                <div class="capability-label">CNC</div>
+                <div class="capability-title">5 Axis Machining</div>
+              </div>
             <div class="capability-image-wrapper">
               <img src="assets/img/cnc.webp" alt="CNC Machining">
             </div>
-            <div class="capability-label">CNC</div>
           </div>
+        
           <div class="capability-card" id="read-more-edm">
+            <div class="capability-detail">Complex Geometry</div>
+            <div class="capability-footer">
+              <div class="capability-label">EDM</div>
+              <div class="capability-title">Electrical Discharge Machining</div>
+            </div>
             <div class="capability-image-wrapper">
               <img src="assets/img/edm.webp" alt="EDM (Electrical Discharge Machining)">
             </div>
-            <div class="capability-label">EDM</div>
           </div>
+        
           <div class="capability-card" id="read-more-mpi">
+            <div class="capability-detail">Quality Control</div>
+            <div class="capability-footer">
+              <div class="capability-label">MPI</div>
+              <div class="capability-title">Magnetic Particle Inspection</div>
+            </div>
             <div class="capability-image-wrapper">
               <img src="assets/img/mpi.webp" alt="MPI (Magnetic Particle Inspection)">
             </div>
-            <div class="capability-label">MPI</div>
           </div>
         </section>
+        
 
         <!-- Partners Section -->
         <section class="partners-section">
@@ -328,16 +346,17 @@
                 <p data-key="valued_partners_p">Strong relationships built on trust, quality, and proven performance.</p>
             </div>
             <div class="partners-grid">
-                <img src="assets/img/collins-aerospace.svg" alt="Collins Aerospace">
-                <img src="assets/img/boeing.svg" alt="Boeing">
-                <img src="assets/img/jabil.svg" alt="Jabil">
-                <img src="assets/img/meggitt.svg" alt="Meggitt">
-                <img src="assets/img/crane.svg" alt="Crane Aerospace & Electronics">
-                <img src="assets/img/pindad.svg" alt="Pindad Enjiniring Indonesia">
-                <img src="assets/img/turkish-aerospace.svg" alt="Turkish Aerospace">
-                <img src="assets/img/pattonair.svg" alt="Pattonair">
-                <img src="assets/img/uac.svg" alt="Universal Alloy Corporation">
-                <img src="assets/img/indonesian-aerospace.svg" alt="Indonesian Aerospace (IAe)">
+                <img src="assets/icons/collins.webp" alt="Collins Aerospace">
+                <img src="assets/icons/boeing.webp" alt="Boeing">
+                <img src="assets/icons/jabil.svg" alt="Jabil">
+                <img src="assets/icons/meggitt.webp" alt="Meggitt">
+                <img src="assets/icons/crane.webp" alt="Crane Aerospace & Electronics">
+                <img src="assets/icons/signia.webp" alt="Signia Aerospace">
+                <img src="assets/icons/safran.svg" alt="Safran">
+                <img src="assets/icons/tusas.webp" alt="Turkish Aerospace">
+                <img src="assets/icons/patton.webp" alt="Pattonair">
+                <img src="assets/icons/uac.webp" alt="Universal Alloy Corporation">
+                <img src="assets/icons/iae.webp" alt="Indonesian Aerospace (IAe)">
             </div>
         </section>
 
@@ -459,7 +478,7 @@
                 <h3 data-key="modal_precision_subtitle">Passion</h3>
                 <div class="modal-text-content">
                   <p data-key="modal_precision_p1">At Pudak Aerospace, precision is more than just a goal—it's our passion. Every step of our manufacturing process, from concept and design to production and final inspection, is driven by an uncompromising commitment to accuracy and reliability, ensuring every aerospace part we produce exceeds industry standards.</p>
-                  <p data-key "modal_precision_p2">Embracing the era of Industry 4.0, we integrate cutting-edge digital technologies such as advanced CAD/CAM systems, real-time data monitoring, and automated quality control to enhance every aspect of production. These innovations allow us to achieve unmatched consistency, reduce lead times, and maintain full traceability across the manufacturing cycle.</p>
+                  <p data-key="modal_precision_p2">Embracing the era of Industry 4.0, we integrate cutting-edge digital technologies such as advanced CAD/CAM systems, real-time data monitoring, and automated quality control to enhance every aspect of production. These innovations allow us to achieve unmatched consistency, reduce lead times, and maintain full traceability across the manufacturing cycle.</p>
                   <p data-key="modal_precision_p3">By combining our engineering expertise with digitalization, we not only improve efficiency but also ensure that each component meets the rigorous demands of modern aerospace engineering. This forward-thinking approach enables us to deliver solutions that not only meet today's requirements but also anticipate the needs of tomorrow's aerospace industry.</p>
                   <p data-key="modal_precision_p4">Above all, our mission goes beyond manufacturing. We are dedicated to building long-term partnerships with our clients, understanding their unique challenges, and delivering precision-driven solutions that empower them to reach new heights.</p>
                 </div>
@@ -471,38 +490,203 @@
       </div>
 
       <!-- Modal for CNC -->
-      <div id="modal-cnc" class="modal-overlay">
-        <div class="modal-content">
-            <div class="modal-header">
-                <img src="assets/img/cnc.webp" alt="CNC Machine">
+      <div id="modal-cnc" class="modal-overlay-b">
+        <div class="modal-content-b">
+          <div class="modal-content-top">
+            <div class="modal-header-b">
+              <img src="assets/img/cnc.webp" alt="CNC Machine">
+              <div class="modal-body-b">
+                <h4 data-key="modal_cnc_title">CNC: 5 Axis Machining</h4>
+                <h5 data-key="modal_cnc_subtitle">High Precision</h5>
+              </div>
             </div>
-            <div class="modal-body">
-                <h2 data-key="modal_precision_title">Precision Our Passion</h2>
-                <h3 data-key="modal_precision_subtitle">Passion</h3>
-                <div class="modal-text-content">
-                  
+            <div class="modal-text-content-b">
                   <ol>
-                    <p data-key="modal_precision_p1">At Pudak Aerospace, we utilize advanced 5-axis machining technology to deliver precision parts faster and more efficiently. Key advantages include:</p>
+                    <p data-key="modal_cnc_p1">At Pudak Aerospace, we utilize advanced 5-axis machining technology to deliver precision parts faster and more efficiently. Key advantages include:</p><br>
                     <li>
-                    Faster Production - Complex components and prototypes can be produced in just 1-2 weeks instead of months.
+                      <strong>Faster Production</strong> - Complex components and prototypes can be produced in just 1-2 weeks instead of months.
                     </li>
                     <li>
-                    Higher Accuracy - Fewer setups mean less risk of alignment errors and greater machining precision.
-                    Better Surface Finish - Shorter cutting tools reduce vibration, improving quality and minimizing hand-finishing work.
+                      <strong>Higher Accuracy</strong> - Fewer setups mean less risk of alignment errors and greater machining precision.
                     </li>
                     <li>
-                    Design Flexibility - Complex geometries can be machined directly from solid material without the need for initial castings.
+                      <strong>Better Surface Finish</strong> - Shorter cutting tools reduce vibration, improving quality and minimizing hand-finishing work.
                     </li>
+                    <li>
+                    <strong>Design Flexibility</strong> - Complex geometries can be machined directly from solid material without the need for initial castings.
+                    </li><br>
+                    <p>
+                      With 5-axis machining, we combine speed, precision, and innovation to meet the demanding needs of aerospace manufacturing.
+                    </p>
                   </ol>
-                  <p> 
-                    With 5-axis machining, we combine speed, precision, and innovation to meet the demanding needs of aerospace manufacturing.</p>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button class="btn-secondary modal-close" id="close-precision" data-key="modal_close">X Close</button>
-            </div>
         </div>
       </div>
+          <div class="modal-footer-b">
+            <button class="btn-secondary modal-close" id="close-cnc" data-key="modal_close">X Close</button>
+        </div>
+      </div>
+    </div>
+
+<!-- Modal for EDM -->
+<div id="modal-edm" class="modal-overlay-b">
+  <div class="modal-content-b">
+    <div class="modal-content-top">
+      <div class="modal-header-b">
+        <img src="assets/img/edm.webp" alt="EDM Machine">
+        <div class="modal-body-b">
+          <h4 data-key="modal_edm_title">EDM (Electrical Discharge Machining)</h4>
+          <h5 data-key="modal_edm_subtitle">Complex Geometry</h5>
+        </div>
+      </div>
+      <div class="modal-text-content-b">
+            <ul>
+              <p data-key="modal_edm_p1">At Pudak Aerospace, we use advanced Electrical Discharge Machining (EDM) technology to produce high-precision components with complex shapes that traditional machining cannot achieve. EDM uses controlled electrical discharges to erode the material, creating intricate details with exceptional accuracy.</p><br>
+              <p>
+                <strong>EDM Capabilities</strong>
+              </p>
+                <li>Wire EDM - Perfect for precision tools and dies, using a thin wire electrode to cut complex shapes.</li>
+                <li>Ideal for plastic molds and deep cavities, using custom-shaped electrodes to form intricate details.</li>
+              </li><br>
+              <p>
+                <strong>HQSF Technology by Makino</strong>
+              </p>
+              <p>
+                Our High Quality Surface Finish (HQSF) technology enhances EDM performance by using a special dielectric fluid additive, producing surfaces far smoother than conventional EDM methods.
+              </p>
+            </ul>
+  </div>
+</div>
+    <div class="modal-footer-b">
+      <button class="btn-secondary modal-close" id="close-edm" data-key="modal_close">X Close</button>
+  </div>
+</div>
+</div>
+
+<!-- Modal for MPI -->
+<div id="modal-mpi" class="modal-overlay-b">
+  <div class="modal-content-b">
+    <div class="modal-content-top">
+      <div class="modal-header-b">
+        <img src="assets/img/mpi.webp" alt="MPI Method">
+        <div class="modal-body-b">
+          <h4 data-key="modal_mpi_title">MPI (Magnetic Particle Inspection)</h4>
+          <h5 data-key="modal_mpi_subtitle">Quality Control</h5>
+        </div>
+      </div>
+      <div class="modal-text-content-b">
+            <ul>
+              <p data-key="modal_mpi_p1">At Pudak Aerospace, ensuring the integrity and reliability of every component is paramount. Magnetic Particle Inspection (MPI) is a critical nondestructive testing (NDT) method we employ to detect surface and near-surface discontinuities in ferromagnetic materials such as iron, nickel, cobalt, and their alloy.</p><br>
+              <li>
+                <strong>Direct Magnetization</strong> -  An electric current is passed directly through the component, generating a magnetic field within the material. The magnetic lines of force are oriented perpendicular to the current flow and may utilize alternating current (AC) or direct current (DC).
+              </li>
+              <li>
+                  <strong>Indirect Magnetization</strong> -  A magnetic field is applied externally without passing current through the component, magnetizing it indirectly.
+                </li>
+
+            </ul>
+  </div>
+</div>
+    <div class="modal-footer-b">
+      <button class="btn-secondary modal-close" id="close-mpi" data-key="modal_close">X Close</button>
+  </div>
+</div>
+</div>
+
+
+<!-- Certificate Modal -->
+<div id="certificateModal" class="modal-overlay">
+  <div class="modal-content-c">
+    <span id="closeCertificate" class="close-btn">&times;</span>
+    <h2 data-key="">Pudak's Certification</h2>
+    <p class="modal-subtitle">Proof of Our Commitment to Quality</p>
+    <div class="certificate-grid">
+      <div class="certificate-item">
+        <p>LRQA Certificate for</p>
+        <h4>AS9100D</h4>
+        <img src="assets/img/as9100d-cer.webp" alt="AS9100 Certification">
+      </div>
+      <div class="certificate-item">
+        <p>Nadcap Certificate for</p>
+        <h4>Nonconventional Machining</h4>
+        <img src="assets/img/ncm.webp" alt="Nadcap Certification">
+      </div>
+      <div class="certificate-item">
+        <p>Nadcap Certificate for</p>
+        <h4>Nondestructive Testing</h4>
+        <img src="assets/img/ndt.webp" alt="Nadcap NDT Certification">
+      </div>
+    </div>
+    <a href="certification.html" class="modal-link">Go to certification page &gt;&gt;</a>
+  </div>
+</div>
+
+
+
+<!-- Modal Become Partner -->
+<div id="partnerModal" class="modal-overlay-b">
+  <div class="partner-modal-content">
+    <span id="closePartnerModal" class="close-btn">&times;</span>
+    <div class="partner-modal-grid">
+      
+      <!-- Left Image -->
+      <div class="partner-modal-image">
+        <img src="assets/img/plane-side.webp" alt="Airplane">
+      </div>
+
+      <!-- Right Form -->
+      <div class="partner-modal-form">
+        <h2>Let's Connect!</h2>
+        <p class="subtitle">Fulfill your thought</p>
+        
+        <form action="https://formspree.io/f/myzpokrw" method="POST">
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="text" name="company" placeholder="Company" required>
+          </div>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="text" name="subject" placeholder="Subject" required>
+          <textarea name="message" placeholder="Messages" required></textarea>
+          <button type="submit" class="btn-primary" >Send Message</button>
+        </form>
+      </div>
+
+      
+      <nav class="inner-nav" id="mainNav">
+        <div class="nav-logo">
+          <img src="assets/img/pudak-aerospace.svg" alt="Pudak Aerospace Logo" />
+        </div>
+      
+        <!-- MENU -->
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#about" data-key="nav_about">About</a></li>
+          <li><a href="#services" data-key="nav_services">Services</a></li>
+          <li><a href="#news" data-key="nav_news">News</a></li>
+          <li><a href="#certificate" data-key="nav_certificate">Certificate</a></li>
+          <li class="nav-mobile-extra">
+            <button id="openPartner" class="partner-btn" data-key="partner_btn">Become Partner</button>
+            <div class="lang-toggle" id="langToggle">ID</div>
+          </li>
+        </ul>
+      
+        <!-- ACTIONS (desktop) -->
+        <div class="nav-actions">
+          <button id="openPartner" class="partner-btn" data-key="partner_btn">Become Partner</button>
+          <div class="lang-toggle" id="langToggle">ID</div>
+        </div>
+      
+        <!-- HAMBURGER -->
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+      
+
+    </div>
+  </div>
+</div>
+
 
         <script src="js/script.js"></script>
       </body>
