@@ -11,6 +11,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
       </head>
       <body>
+        
+        
         <!-- mount untuk nav saat sticky -->
         <div id="navMount"></div>
 
@@ -22,16 +24,24 @@
               <div class="nav-logo">
                 <img src="assets/img/pudak-aerospace.svg" alt="Pudak Aerospace Logo" />
               </div>
-              <ul class="nav-menu">
+              <ul class="nav-menu" id="navMenu">
                 <li><a href="#about" data-key="nav_about">About</a></li>
                 <li><a href="#services" data-key="nav_services">Services</a></li>
                 <li><a href="#news" data-key="nav_news">News</a></li>
                 <li><a href="#certificate" data-key="nav_certificate">Certificate</a></li>
+                <div class="nav-mobile-extra nav-actions">
+                    <button id="openPartner" class="partner-btn" data-key="partner_btn">Become Partner</button>
+                    <div class="lang-toggle" id="langToggle">ID</div>
+                </div>
               </ul>
-              <div class="nav-actions">
-                <button id="openPartner" class="partner-btn" data-key="partner_btn">Become Partner</button>
-                <div class="lang-toggle" id="langToggle">ID</div>
-              </div>
+
+                        <!-- HAMBURGER -->
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          
             </nav>
 
             <div class="hero-bg"></div>
@@ -649,43 +659,6 @@
           <button type="submit" class="btn-primary" >Send Message</button>
         </form>
       </div>
-
-      
-      <nav class="inner-nav" id="mainNav">
-        <div class="nav-logo">
-          <img src="assets/img/pudak-aerospace.svg" alt="Pudak Aerospace Logo" />
-        </div>
-      
-        <!-- MENU -->
-        <ul class="nav-menu" id="navMenu">
-          <li><a href="#about" data-key="nav_about">About</a></li>
-          <li><a href="#services" data-key="nav_services">Services</a></li>
-          <li><a href="#news" data-key="nav_news">News</a></li>
-          <li><a href="#certificate" data-key="nav_certificate">Certificate</a></li>
-          <li class="nav-mobile-extra">
-            <button id="openPartner" class="partner-btn" data-key="partner_btn">Become Partner</button>
-            <div class="lang-toggle" id="langToggle">ID</div>
-          </li>
-        </ul>
-      
-        <!-- ACTIONS (desktop) -->
-        <div class="nav-actions">
-          <button id="openPartner" class="partner-btn" data-key="partner_btn">Become Partner</button>
-          <div class="lang-toggle" id="langToggle">ID</div>
-        </div>
-      
-        <!-- HAMBURGER -->
-        <div class="hamburger" id="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </nav>
-      
-
-    </div>
-  </div>
-</div>
 
 
         <script src="js/script.js"></script>
