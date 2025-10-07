@@ -62,8 +62,6 @@ const translations = {
     form_message: "Your Message",
     send_message: "Send Message",
     footer_about_p: "PT Pudak Scientific is an established and rapidly expanding company specializing in the manufacturing of high-precision aerospace components.",
-    linkedin: "LinkedIn",
-    facebook: "Facebook",
     service_footer_title: "Service",
     cnc_machining: "CNC Machining",
     edm_services: "EDM Services",
@@ -80,8 +78,8 @@ const translations = {
     news_footer: "News",
     certificate_footer: "Certificate",
     certifications_for_title: "Certifications for<br><span>Pudak Aerospace</span>",
-    back_to_top: "↑ Back to top",
-    copyright: "&copy; PT PUDAK SCIENTIFIC © 2025 All Rights Reserved",
+    back_to_top: "Back to top ⤴",
+    copyright: "PT PUDAK SCIENTIFIC © 2025 All Rights Reserved",
 
     // Modal translations
     modal_close: "X Close",
@@ -161,8 +159,6 @@ const translations = {
     form_message: "Pesan Anda",
     send_message: "Kirim Pesan",
     footer_about_p: "PT Pudak Scientific adalah perusahaan mapan dan berkembang pesat yang berspesialisasi dalam pembuatan komponen dirgantara presisi tinggi.",
-    linkedin: "LinkedIn",
-    facebook: "Facebook",
     service_footer_title: "Layanan",
     cnc_machining: "Pemesinan CNC",
     edm_services: "Layanan EDM",
@@ -179,8 +175,8 @@ const translations = {
     news_footer: "Berita",
     certificate_footer: "Sertifikat",
     certifications_for_title: "Sertifikasi untuk<br><span>Pudak Aerospace</span>",
-    back_to_top: "↑ Kembali ke atas",
-    copyright: "&copy; PT PUDAK SCIENTIFIC © 2025 Hak Cipta Dilindungi Undang-Undang",
+    back_to_top: "Kembali ke atas ⤴",
+    copyright: "PT PUDAK SCIENTIFIC © 2025 Hak Cipta Dilindungi Undang-Undang",
     // Modal translations
     modal_close: "X Tutup",
     modal_manufacture_title: "Manufaktur 4.0",
@@ -205,7 +201,8 @@ const langToggle = document.getElementById("langToggle");
 
 function setLanguage(lang) {
   localStorage.setItem('lang', lang);
-  langToggle.textContent = lang.toUpperCase();
+  document.querySelector("#langToggle .lang-text").textContent = lang.toUpperCase();
+
 
   document.querySelectorAll('[data-key]').forEach(elem => {
     const key = elem.getAttribute('data-key');
