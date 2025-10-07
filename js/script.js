@@ -496,3 +496,67 @@ if (hamburger && navMenu) {
     });
   });
 }
+
+// Favicon Berdenyut Lembut
+(function() {
+  const favicon = document.querySelector("link[rel='icon']");
+  const originalHref = favicon.getAttribute("href");
+
+  // Buat elemen canvas untuk menggambar favicon animasi
+  const canvas = document.createElement("canvas");
+  const size = 64; // resolusi tinggi agar tetap tajam
+  canvas.width = size;
+  canvas.height = size;
+  const ctx = canvas.getContext("2d");
+
+  const img = new Image();
+  img.src = originalHref;
+
+  let scale = 1;
+  let growing = true;
+  let animationFrame;
+
+  function draw() {
+    ctx.clearRect(0, 0, size, size);
+    ctx.save();
+    ctx.translate(size / 2, size / 2);
+
+    // Skala (efek denyut)
+    ctx.scale(scale, scale);
+    ctx.drawImage(img, -size / 2, -size / 2, size, size);
+    ctx.restore();
+
+    // Ubah favicon jadi versi baru (data URL)
+    favicon.href = canvas.toDataURL("image/png");
+
+    // Denyutan halus seperti Apple Music
+    if (growing) {
+      scale += 0.005;
+      if (scale >= 1.08) growing = false;
+    } else {
+      scale -= 0.005;
+      if (scale <= 0.94) growing = true;
+    }
+
+    animationFrame = requestAnimationFrame(draw);
+  }
+
+  function startPulse() {
+    if (!animationFrame) draw();
+  }
+
+  function stopPulse() {
+    cancelAnimationFrame(animationFrame);
+    animationFrame = null;
+    favicon.href = originalHref; // kembalikan ikon semula
+  }
+
+  // Hanya berdenyut saat tab aktif
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden) stopPulse();
+    else startPulse();
+  });
+
+  // Mulai animasi
+  startPulse();
+})();
