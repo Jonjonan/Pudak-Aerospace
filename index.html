@@ -5,8 +5,8 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Pudak Aerospace - Excellence, On-Time!</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="css/style.css"/>
+        <script src="https://unpkg.com/lucide@latest"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
       </head>
@@ -31,7 +31,10 @@
                 <li><a href="#certificate" data-key="nav_certificate">Certificate</a></li>
                 <div class="nav-mobile-extra nav-actions">
                     <button id="openPartner" class="partner-btn" data-key="partner_btn">Become Partner</button>
-                    <div class="lang-toggle" id="langToggle">ID</div>
+                    <div class="lang-toggle" id="langToggle">
+                      <i data-lucide="globe"></i> <span class="lang-text">ID</span>
+                    </div>
+                    
                 </div>
               </ul>
 
@@ -253,22 +256,22 @@
           </div>
           <div class="excellence-cards">
             <div class="excellence-card">
-              <i class="fa-solid fa-shield-halved"></i>
+              <i data-lucide="shield"></i>
               <h3 data-key="precision_title">Precision</h3>
               <p data-key="precision_p">Micron-level accuracy in every component we manufacture</p>
             </div>
             <div class="excellence-card">
-              <i class="fa-solid fa-gem"></i>
+              <i data-lucide="gem"></i>
               <h3 data-key="quality_title">Quality</h3>
               <p data-key="quality_p">International standards compliance and rigorous testing</p>
             </div>
             <div class="excellence-card">
-              <i class="fa-solid fa-clock"></i>
+              <i data-lucide="clock-7"></i>
               <h3 data-key="reliability_title">Reliability</h3>
               <p data-key="reliability_p">99% on-time delivery rate with consistent quality</p>
             </div>
             <div class="excellence-card">
-              <i class="fa-solid fa-globe"></i>
+              <i data-lucide="globe"></i>
               <h3 data-key="global_reach_title">Global Reach</h3>
               <p data-key="global_reach_p">Serving aerospace companies across 13+ countries</p>
             </div>
@@ -376,9 +379,9 @@
                   <h2 data-key="ready_to_work_title">Ready to Work Together?</h2>
                   <p data-key="ready_to_work_p">Contact us today to discuss your aerospace needs and discover how we can help bring your project to life.</p>
                   <ul>
-                      <li><i class="fa-solid fa-map-marker-alt"></i> <span data-key="contact_address">Jl. Mekar Raya Kav. 12, Bandung 40614 - Indonesia</span></li>
-                      <li><i class="fa-solid fa-phone"></i> +62 22-726-543-235</li>
-                      <li><i class="fa-solid fa-envelope"></i> info.pudakscientific.com</li>
+                      <li><i data-lucide="map-pin"></i> <span data-key="contact_address">Jl. Mekar Raya Kav. 12, Bandung 40614 - Indonesia</span></li>
+                      <li><i data-lucide="phone"></i> +62 22-726-543-235</li>
+                      <li><i data-lucide="mail"></i> info.pudakscientific.com</li>
                   </ul>
               </div>
               <div class="footer-contact-form">
@@ -400,8 +403,8 @@
                     <img src="assets/img/pudak-aerospace.svg" alt="Pudak Aerospace Logo">
                     <p data-key="footer_about_p">PT Pudak Scientific is an established and rapidly expanding company specializing in the manufacturing of high-precision aerospace components.</p>
                     <div class="footer-social">
-                        <a href="#"><i class="fa-brands fa-linkedin"></i> <span data-key="linkedin">LinkedIn</span></a>
-                        <a href="#"><i class="fa-brands fa-facebook"></i> <span data-key="facebook">Facebook</span></a>
+                        <a href="https://id.linkedin.com/company/pudak-scientific"><i data-lucide="linkedin"></i> <span>LinkedIn</span></a>
+                        <a href="https://www.facebook.com/PudakScientific/"><i data-lucide="facebook"></i> <span>Facebook</span></a>
                     </div>
                 </div>
                 <div class="footer-links">
@@ -433,15 +436,21 @@
                 </div>
                 <div class="footer-certifications">
                     <h4 data-key="certifications_for_title">Certifications for<br><span>Pudak Aerospace</span></h4>
+                    <a href="assets/img/AS9100D.pdf" target="_blank">
                     <img src="assets/img/as9100d.svg" alt="AS9100 Certification">
+                  </a>
+                  <a href="assets/img/NM.pdf" target="_blank">
                     <img src="assets/img/nadcap.svg" alt="Nadcap Certification">
+                  </a>
+                  <a href="assets/img/NDT.pdf" target="_blank">
                     <img src="assets/img/nadcap-ndt.svg" alt="Nadcap NDT Certification">
-                    <a href="#" class="back-to-top" data-key="back_to_top">↑ Back to top</a>
+                  </a>
+                    <a href="#" class="back-to-top" data-key="back_to_top"> Back to top ⤴</a>
                 </div>
                 </div>
               <div class="horizontal__line"></div>
               <div class="footer-bottom">
-                  <p data-key="copyright">&copy; PT PUDAK SCIENTIFIC © 2025 All Rights Reserved</p>
+                  <p data-key="copyright">PT PUDAK SCIENTIFIC © 2025 All Rights Reserved</p>
             </div>
         </div>
       </footer>
@@ -660,7 +669,9 @@
         </form>
       </div>
 
-
+      <script>
+        lucide.createIcons();
+      </script>
         <script src="js/script.js"></script>
       </body>
       </html>
