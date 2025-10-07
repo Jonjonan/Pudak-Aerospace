@@ -1413,11 +1413,23 @@
 .back-to-top {
   display: inline-block;
   background-color: #36404a;
-  color: white;
+  color: #fff;
   padding: 10px 15px;
-  border-radius: 5px;
+  border-radius: 8px;
   text-decoration: none;
   margin-top: 20px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  transition: 
+    background-color 0.3s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.back-to-top:hover {
+  background-color: #44505d;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
 }
 
 /* Responsive Footer Main */
@@ -1860,3 +1872,4 @@ Become Partner Modal Styling
       display: none; /* hide image on small screen */
     }
   }
+
