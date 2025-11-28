@@ -1,686 +1,814 @@
 
-      <!DOCTYPE html>
-      <html lang="en">
-      <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Pudak Aerospace - Excellence, On-Time!</title>
-        <link rel="stylesheet" href="css/style.css"/>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pudak Aerospace - Excellence, On-Time!</title>
+  <link rel="stylesheet" href="css/style.css"/>
+
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/favicon-180x180.png">
+  <link rel="manifest" href="assets/favicon/site.webmanifest">
+  <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#1078ba">
+  <meta name="msapplication-TileColor" content="#1078ba">
+  <meta name="theme-color" content="#1078ba">
       
-      <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/favicon-180x180.png">
-        <link rel="manifest" href="assets/favicon/site.webmanifest">
-        <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#1078ba">
-        <meta name="msapplication-TileColor" content="#1078ba">
-        <meta name="theme-color" content="#1078ba">
-            
-        <script src="https://unpkg.com/lucide@latest"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-      </head>
-      <body>
-        
-        
-        <!-- mount untuk nav saat sticky -->
-        <div id="navMount"></div>
-
-        <!-- Hero Section -->
-        <section class="hero">
-          <div class="hero-frame">
-            <!-- NAV di dalam frame saat cinematic -->
-            <nav class="inner-nav" id="mainNav">
-              <div class="nav-logo">
-                <img src="assets/img/pudak-aerospace.svg" alt="Pudak Aerospace Logo" />
-              </div>
-              <ul class="nav-menu" id="navMenu">
-                <li><a href="#about" data-key="nav_about">About</a></li>
-                <li><a href="#services" data-key="nav_services">Services</a></li>
-                <li><a href="#news" data-key="nav_news">News</a></li>
-                <li><a href="#certificate" data-key="nav_certificate">Certificate</a></li>
-                <div class="nav-mobile-extra nav-actions">
-                    <button id="openPartner" class="partner-btn" data-key="partner_btn">Become Partner</button>
-                    <div class="lang-toggle" id="langToggle">
-                      <i data-lucide="globe"></i> <span class="lang-text">ID</span>
-                    </div>
-                    
-                </div>
-              </ul>
-
-                        <!-- HAMBURGER -->
-          <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          
-            </nav>
-
-            <div class="hero-bg"></div>
-            <div class="hero-bg-2"></div>
-
-            <div class="hero-footer">
-                <div class="footer-column-1">
-                    <h3 data-key="welcome_to">WELCOME TO</h3>
-                    <h1 data-key="company_name">PUDAK AEROSPACE</h1>
-                </div>
-                <div class="footer-column-2">
-                    <p data-key="as9100">an <strong>AS9100</strong> Certified Company.</p>
-                </div>
-                <div class="footer-column-3">
-                  <a href="#services">
-                    <button class="btn-primary" id="explore-btn" data-key="explore_btn">Explore Our Service →</button>
-                  </a>
-                    <button id="openCertificate" class="btn-secondary" data-key="certificate_btn">Our Certificate</button>
-                </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- What We Do Section -->
-        <section class="what-we-do" id="services">
-            <div class="section-header">
-                <h2 data-key="what_we_do_title">What We Do</h2>
-                <p data-key="what_we_do_subtitle">Your partner in delivering high-performance aerospace components</p>
-            </div>
-            <div class="services-container">
-                <img src="assets/img/full-plane.webp" alt="Airplane" class="airplane-img">
-                <div class="service-item" id="service-1">
-                    <div class="service-img-container">
-                        <img src="assets/img/precision-machining.webp" alt="Precision Machining">
-                    </div>
-                    <div class="service-text">
-                        <h3 data-key="precision_machining_title">Precision Machining</h3>
-                        <p data-key="precision_machining_subtitle">(3, 4, 5-axis, Swiss Type & EDM)</p>
-                    </div>
-                </div>
-                <div class="service-item" id="service-2">
-                    <div class="service-img-container">
-                        <img src="assets/img/assembly.webp" alt="Assembly">
-                    </div>
-                    <div class="service-text">
-                        <h3 data-key="assembly_title">Assembly</h3>
-                        <p data-key="assembly_subtitle">Basic Component of Aerospace</p>
-                    </div>
-                </div>
-                <div class="service-item" id="service-3">
-                    <div class="service-img-container">
-                        <img src="assets/img/surface.webp" alt="Surface Treatment">
-                    </div>
-                    <div class="service-text">
-                        <h3 data-key="surface_treatment_title">Surface Treatment</h3>
-                        <p data-key="assembly_subtitle">Basic Component of Aerospace</p>
-                    </div>
-                </div>
-                <div class="service-item" id="service-4">
-                    <div class="service-img-container">
-                        <img src="assets/img/heat.webp" alt="Heat Treatment">
-                    </div>
-                    <div class="service-text">
-                        <h3 data-key="heat_treatment_title">Heat Treatment</h3>
-                        <p data-key="assembly_subtitle">Basic Component of Aerospace</p>
-                    </div>
-                </div>
-                <div class="service-item" id="service-5">
-                    <div class="service-img-container">
-                        <img src="assets/img/quality.webp" alt="Quality Inspection">
-                    </div>
-                    <div class="service-text">
-                        <h3 data-key="quality_inspection_title">Quality Inspection</h3>
-                        <p data-key="assembly_subtitle">Basic Component of Aerospace</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="rest-section">
-          <div class="part">
-            <div class="part__slide">
-              <div class="card__small">
-                <img src="assets/img/spindle_assy.webp" alt="Part Machine">
-                <p><strong>Spindle Assy</strong></p>
-                <p>00PD3830-00</p>
-              </div>
-              <div class="card__small">
-                <img src="assets/img/adaptor.webp" alt="Part Machine">
-                <p><strong>Adaptor</strong></p>
-                <p>9963-2</p>
-              </div><div class="card__small">
-                <img src="assets/img/case.webp" alt="Part Machine">
-                <p><strong>Case Actuator</strong></p>
-                <p>86133-81</p>
-              </div><div class="card__small">
-                <img src="assets/img/support.webp" alt="Part Machine">
-                <p><strong>Support Isolant</strong></p>
-                <p>494623164-A</p>
-              </div><div class="card__small">
-                <img src="assets/img/nut.webp" alt="Part Machine">
-                <p><strong>Nut</strong></p>
-                <p>CH3123-0167</p>
-              </div><div class="card__small">
-                <img src="assets/img/gimbal.webp" alt="Part Machine">
-                <p><strong>Gimbal & Bush</strong></p>
-                <p>00PD3830-00</p>
-              </div><div class="card__small">
-                <img src="assets/img/spindle.webp" alt="Part Machine">
-                <p><strong>Sub Assy Spindle A</strong></p>
-                <p>00PD3830-00</p>
-              </div><div class="card__small">
-                <img src="assets/img/retaining.webp" alt="Part Machine">
-                <p><strong>Retaining Bearing & Seal</strong></p>
-                <p>00PD3830-00</p>
-              </div><div class="card__small">
-                <img src="assets/img/door.webp" alt="Part Machine">
-                <p><strong>Door</strong></p>
-                <p>GLS9845-2 A</p>
-              </div><div class="card__small">
-                <img src="assets/img/cover.webp" alt="Part Machine">
-                <p><strong>Cover Bearing</strong></p>
-                <p>00PD3830-00</p>
-              </div>
-            </div>
-
-            <div class="part__slide">
-              <div class="card__small">
-                <img src="assets/img/spindle_assy.webp" alt="Part Machine">
-                <p><strong>Spindle Assy</strong></p>
-                <p>00PD3830-00</p>
-              </div>
-              <div class="card__small">
-                <img src="assets/img/adaptor.webp" alt="Part Machine">
-                <p><strong>Adaptor</strong></p>
-                <p>9963-2</p>
-              </div><div class="card__small">
-                <img src="assets/img/case.webp" alt="Part Machine">
-                <p><strong>Case Actuator</strong></p>
-                <p>86133-81</p>
-              </div><div class="card__small">
-                <img src="assets/img/support.webp" alt="Part Machine">
-                <p><strong>Support Isolant</strong></p>
-                <p>494623164-A</p>
-              </div><div class="card__small">
-                <img src="assets/img/nut.webp" alt="Part Machine">
-                <p><strong>Nut</strong></p>
-                <p>CH3123-0167</p>
-              </div><div class="card__small">
-                <img src="assets/img/gimbal.webp" alt="Part Machine">
-                <p><strong>Gimbal & Bush</strong></p>
-                <p>00PD3830-00</p>
-              </div><div class="card__small">
-                <img src="assets/img/spindle.webp" alt="Part Machine">
-                <p><strong>Sub Assy Spindle A</strong></p>
-                <p>00PD3830-00</p>
-              </div><div class="card__small">
-                <img src="assets/img/retaining.webp" alt="Part Machine">
-                <p><strong>Retaining Bearing & Seal</strong></p>
-                <p>00PD3830-00</p>
-              </div><div class="card__small">
-                <img src="assets/img/door.webp" alt="Part Machine">
-                <p><strong>Door</strong></p>
-                <p>GLS9845-2 A</p>
-              </div><div class="card__small">
-                <img src="assets/img/cover.webp" alt="Part Machine">
-                <p><strong>Cover Bearing</strong></p>
-                <p>00PD3830-00</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Future of Manufacturing Section -->
-        <section class="future-manufacturing">
-          <div class="section-header">
-            <h2 data-key="driving_future_title">Driving the Future of Manufacturing</h2>
-            <p data-key="driving_future_subtitle">Embracing industry 4.0 with recision as our passion</p>
-          </div>
-          <div class="articles">
-            <article class="article">
-              <div class="article-image">
-                <img src="assets/img/manufacture_4.webp" alt="A laptop displaying data and charts, representing Industry 4.0.">
-              </div>
-              <div class="article-content">
-                <h3 data-key="manufacture_4_0_title">Manufacture 4.0</h3>
-                <p data-key="manufacture_4_0_p">With more than 20 years of expertise in aerospace parts manufacturing, Pudak Aerospace is embracing the future through Manufacture 4.0. Starting in mid-2024, we began integrating digitalization and automation across every division.</p>
-                <button class="btn-primary" id="read-more-manufacturing" data-key="read_more">Read more</button>
-              </div>
-            </article>
-            <article class="article article-reverse">
-              <div class="article-image">
-                <img src="assets/img/precision.webp" alt="A person meticulously working on a small component, representing precision.">
-              </div>
-              <div class="article-content">
-                <h3 data-key="precision_passion_title">Precision Our Passion</h3>
-                <p data-key="precision_passion_p">At Pudak Aerospace, precision is more than just a goal—it's our passion. Every step of our manufacturing process, from concept and design to production and final inspection, is driven by an uncompromising commitment to accuracy and reliability.</p>
-                <button class="btn-primary" id="read-more-precision" data-key="read_more">Read more</button>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <!-- Excellence Section -->
-        <section class="excellence-section">
-          <div class="section-header">
-            <h2 data-key="excellence_achieved_title">Excellence is Achieved</h2>
-            <p data-key="excellence_achieved_subtitle">When quality and punctuality coexist</p>
-          </div>
-          <div class="excellence-cards">
-            <div class="excellence-card">
-              <i data-lucide="shield"></i>
-              <h3 data-key="precision_title">Precision</h3>
-              <p data-key="precision_p">Micron-level accuracy in every component we manufacture</p>
-            </div>
-            <div class="excellence-card">
-              <i data-lucide="gem"></i>
-              <h3 data-key="quality_title">Quality</h3>
-              <p data-key="quality_p">International standards compliance and rigorous testing</p>
-            </div>
-            <div class="excellence-card">
-              <i data-lucide="clock-7"></i>
-              <h3 data-key="reliability_title">Reliability</h3>
-              <p data-key="reliability_p">99% on-time delivery rate with consistent quality</p>
-            </div>
-            <div class="excellence-card">
-              <i data-lucide="globe"></i>
-              <h3 data-key="global_reach_title">Global Reach</h3>
-              <p data-key="global_reach_p">Serving aerospace companies across 13+ countries</p>
-            </div>
-          </div>
-        </section>
-
-        <!-- Achievements Section -->
-        <section class="achievements-section">
-          <div class="achievements-container">
-            <div class="achievement-item">
-              <div class="achievement-value">650+</div>
-              <div class="achievement-label" data-key="active_part_numbers">Active<br>Part Numbers</div>
-            </div>
-            <div class="achievement-item">
-              <div class="achievement-value">99%</div>
-              <div class="achievement-label" data-key="on_time_delivery">On Time<br>Delivery</div>
-            </div>
-            <div class="achievement-item">
-              <div class="achievement-value">&lt;160</div>
-              <div class="achievement-label" data-key="part_per_minutes">Part<br>per Minutes</div>
-            </div>
-            <div class="achievement-item">
-              <div class="achievement-value">13+</div>
-              <div class="achievement-label" data-key="countries_served">Countries<br>Served</div>
-            </div>
-          </div>
-        </section>
-
-        <!-- About Us Section -->
-        <section class="about-us-section">
-          <div class="about-us-container">
-            <div class="about-us-content">
-              <h2 data-key="pudak_aerospace_about_title">Pudak Aerospace</h2>
-              <p data-key="pudak_aerospace_about_p1">PT. Pudak Scientific is ready to provide service for the best precision part machining as according to the international standards.</p>
-              <p data-key="pudak_aerospace_about_p2">With the support of modern 5-axis CNC machines, EDM (Electrical Discharge Machining), sophisticated measuring equipment, up to date knowledge and experience we ready to produce highly complicated parts with micron precision for you.</p>
-              <p data-key="pudak_aerospace_about_p3">The Quality and On-time Delivery is our main concern. We realize that it is important for every personnel to have quality conscious and cost-responsible thinking and of its implementation in every activity.</p>
-            </div>
-            <div class="about-us-image">
-              <img src="assets/img/machinist.webp" alt="Technician operating a modern 5-axis CNC machine, the NHX 4000.">
-            </div>
-          </div>
-        </section>
-
-        <!-- Core Capabilities Section -->
-        <section class="core-capabilities">
-          <div class="capability-card" id="read-more-cnc">
-              <div class="capability-detail">High Precision</div>
-              <div class="capability-footer">
-                <div class="capability-label">CNC</div>
-                <div class="capability-title">5 Axis Machining</div>
-              </div>
-            <div class="capability-image-wrapper">
-              <img src="assets/img/cnc.webp" alt="CNC Machining">
-            </div>
-          </div>
-        
-          <div class="capability-card" id="read-more-edm">
-            <div class="capability-detail">Complex Geometry</div>
-            <div class="capability-footer">
-              <div class="capability-label">EDM</div>
-              <div class="capability-title">Electrical Discharge Machining</div>
-            </div>
-            <div class="capability-image-wrapper">
-              <img src="assets/img/edm.webp" alt="EDM (Electrical Discharge Machining)">
-            </div>
-          </div>
-        
-          <div class="capability-card" id="read-more-mpi">
-            <div class="capability-detail">Quality Control</div>
-            <div class="capability-footer">
-              <div class="capability-label">MPI</div>
-              <div class="capability-title">Magnetic Particle Inspection</div>
-            </div>
-            <div class="capability-image-wrapper">
-              <img src="assets/img/mpi.webp" alt="MPI (Magnetic Particle Inspection)">
-            </div>
-          </div>
-        </section>
-        
-
-        <!-- Partners Section -->
-        <section class="partners-section">
-            <div class="section-header">
-                <h2 data-key="valued_partners_title">Our Valued Partners</h2>
-                <p data-key="valued_partners_p">Strong relationships built on trust, quality, and proven performance.</p>
-            </div>
-            <div class="partners-grid">
-                <img src="assets/icons/collins.webp" alt="Collins Aerospace">
-                <img src="assets/icons/boeing.webp" alt="Boeing">
-                <img src="assets/icons/jabil.svg" alt="Jabil">
-                <img src="assets/icons/meggitt.webp" alt="Meggitt">
-                <img src="assets/icons/crane.webp" alt="Crane Aerospace & Electronics">
-                <img src="assets/icons/signia.webp" alt="Signia Aerospace">
-                <img src="assets/icons/safran.svg" alt="Safran">
-                <img src="assets/icons/tusas.webp" alt="Turkish Aerospace">
-                <img src="assets/icons/patton.webp" alt="Pattonair">
-                <img src="assets/icons/uac.webp" alt="Universal Alloy Corporation">
-                <img src="assets/icons/iae.webp" alt="Indonesian Aerospace (IAe)">
-            </div>
-        </section>
-
-        <footer class="footer">
-          <div class="footer-contact-section">
-              <div class="footer-contact-info">
-                  <h2 data-key="ready_to_work_title">Ready to Work Together?</h2>
-                  <p data-key="ready_to_work_p">Contact us today to discuss your aerospace needs and discover how we can help bring your project to life.</p>
-                  <ul>
-                      <li><i data-lucide="map-pin"></i> <span data-key="contact_address">Jl. Mekar Raya Kav. 12, Bandung 40614 - Indonesia</span></li>
-                      <li><i data-lucide="phone"></i> +62 22-726-543-235</li>
-                      <li><i data-lucide="mail"></i> info.pudakscientific.com</li>
-                  </ul>
-              </div>
-              <div class="footer-contact-form">
-                  <h3 data-key="get_in_touch">Get in Touch</h3>
-                  <form action="https://formspree.io/f/myzpokrw" method="POST">
-                      <div class="form-row">
-                          <input type="text" name="name" data-key="form_name" placeholder="Name" required>
-                          <input type="text" name="company" data-key="form_company" placeholder="Company" required>
-                      </div>
-                      <input type="email" name="email" data-key="form_email" placeholder="Email Address" required>
-                      <textarea name="message" data-key="form_message" placeholder="Your Message" required></textarea>
-                      <button type="submit" class="btn-primary" data-key="send_message">Send Message</button>
-                  </form>
-              </div>
-          </div>
-          <div class="footer-main-container">
-            <div class="footer-main">
-                <div class="footer-about">
-                    <img src="assets/img/pudak-aerospace.svg" alt="Pudak Aerospace Logo">
-                    <p data-key="footer_about_p">PT Pudak Scientific is an established and rapidly expanding company specializing in the manufacturing of high-precision aerospace components.</p>
-                    <div class="footer-social">
-                        <a href="https://id.linkedin.com/company/pudak-scientific"><i data-lucide="linkedin"></i> <span>LinkedIn</span></a>
-                        <a href="https://www.facebook.com/PudakScientific/"><i data-lucide="facebook"></i> <span>Facebook</span></a>
-                    </div>
-                </div>
-                <div class="footer-links">
-                    <ul>
-                      <h4 data-key="service_footer_title">Service</h4>
-                        <li><a href="#" data-key="cnc_machining">CNC Machining</a></li>
-                        <li><a href="#" data-key="edm_services">EDM Services</a></li>
-                        <li><a href="#" data-key="quality_inspection_footer">Quality Inspection</a></li>
-                        <li><a href="#" data-key="custom_manufacturing">Custom Manufacturing</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <ul>
-                      <h4 data-key="industries_title">Industries</h4>
-                        <li><a href="#" data-key="commercial_aviation">Commercial Aviation</a></li>
-                        <li><a href="#" data-key="defense_military">Defense & Military</a></li>
-                        <li><a href="#" data-key="space_technology">Space Technology</a></li>
-                        <li><a href="#" data-key="general_aviation">General Aviation</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <ul>
-                      <h4 data-key="company_footer_title">Company</h4>
-                        <li><a href="#" data-key="about_us_footer">About Us</a></li>
-                        <li><a href="#" data-key="services_footer">Services</a></li>
-                        <li><a href="#" data-key="news_footer">News</a></li>
-                        <li><a href="#" data-key="certificate_footer">Certificate</a></li>
-                    </ul>
-                </div>
-                <div class="footer-certifications">
-                    <h4 data-key="certifications_for_title">Certifications for<br><span>Pudak Aerospace</span></h4>
-                    <a href="assets/img/AS9100D.pdf" target="_blank">
-                    <img src="assets/img/as9100d.svg" alt="AS9100 Certification">
-                  </a>
-                  <a href="assets/img/NM.pdf" target="_blank">
-                    <img src="assets/img/nadcap.svg" alt="Nadcap Certification">
-                  </a>
-                  <a href="assets/img/NDT.pdf" target="_blank">
-                    <img src="assets/img/nadcap-ndt.svg" alt="Nadcap NDT Certification">
-                  </a>
-                    <a href="#" class="back-to-top" data-key="back_to_top"> Back to top ⤴</a>
-                </div>
-                </div>
-              <div class="horizontal__line"></div>
-              <div class="footer-bottom">
-                  <p data-key="copyright">PT PUDAK SCIENTIFIC © 2025 All Rights Reserved</p>
-            </div>
-        </div>
-      </footer>
-
-      <!-- Modal for Manufacturing 4.0 -->
-      <div id="modal-manufacturing" class="modal-overlay">
-          <div class="modal-content">
-              <div class="modal-header">
-                  <img src="assets/img/manufacture_4.webp" alt="Manufacturing 4.0">
-              </div>
-              <div class="modal-body">
-                  <h2 data-key="modal_manufacture_title">Manufacture 4.0</h2>
-                  <h3 data-key="modal_manufacture_subtitle">Driving the Future of Smart Manufacturing</h3>
-                  <div class="modal-text-content">
-                    <p data-key="modal_manufacture_p1">With more than 20 years of expertise in aerospace parts manufacturing, Pudak Aerospace is embracing the future through Manufacture 4.0. Starting in mid-2024, we began integrating digitalization and automation across every division, step by step, to transform our operations. This shift toward smart manufacturing enables us to improve efficiency, precision, and innovation at every stage of production. Our goal is to fully modernize our processes, ensuring we stay ahead in the aerospace industry while delivering superior quality and performance for our customers.</p>
-                    <p data-key="modal_manufacture_p2">Our journey toward digital transformation is powered by two key innovations:</p>
-                  </div>
-                  <div class="modal-text-content-2">
-                    <div>
-                      <h4 data-key="modal_manufacture_h4_1">Odoo ERP Integration</h4>
-                      <p data-key="modal_manufacture_p3">We have implemented Odoo as our central digital platform to streamline operations, improve efficiency, and ensure real-time data visibility across all departments.</p>
-                    </div>
-                    <div>
-                      <h4 data-key="modal_manufacture_h4_2">Sentry: Our Digital Transformation Platform</h4>
-                      <p data-key="modal_manufacture_p4">To further support modern manufacturing, we developed Sentry, a proprietary platform designed to enhance connectivity, improve workflow automation, and drive continuous improvement across our processes.</p>
-                    </div>
-                  </div>
-                  <p data-key="modal_manufacture_p5">By combining Odoo ERP and Sentry, we are shaping a smarter, more efficient, and environmentally responsible future for our manufacturing operations.</p>
-              </div>
-              <div class="modal-footer">
-                  <button class="btn-secondary modal-close" id="close-manufacturing" data-key="modal_close">X Close</button>
-              </div>
-          </div>
-      </div>
-
-      <!-- Modal for Precision Our Passion -->
-      <div id="modal-precision" class="modal-overlay">
-        <div class="modal-content">
-            <div class="modal-header">
-                <img src="assets/img/precision.webp" alt="Precision Our Passion">
-            </div>
-            <div class="modal-body">
-                <h2 data-key="modal_precision_title">Precision Our Passion</h2>
-                <h3 data-key="modal_precision_subtitle">Passion</h3>
-                <div class="modal-text-content">
-                  <p data-key="modal_precision_p1">At Pudak Aerospace, precision is more than just a goal—it's our passion. Every step of our manufacturing process, from concept and design to production and final inspection, is driven by an uncompromising commitment to accuracy and reliability, ensuring every aerospace part we produce exceeds industry standards.</p>
-                  <p data-key="modal_precision_p2">Embracing the era of Industry 4.0, we integrate cutting-edge digital technologies such as advanced CAD/CAM systems, real-time data monitoring, and automated quality control to enhance every aspect of production. These innovations allow us to achieve unmatched consistency, reduce lead times, and maintain full traceability across the manufacturing cycle.</p>
-                  <p data-key="modal_precision_p3">By combining our engineering expertise with digitalization, we not only improve efficiency but also ensure that each component meets the rigorous demands of modern aerospace engineering. This forward-thinking approach enables us to deliver solutions that not only meet today's requirements but also anticipate the needs of tomorrow's aerospace industry.</p>
-                  <p data-key="modal_precision_p4">Above all, our mission goes beyond manufacturing. We are dedicated to building long-term partnerships with our clients, understanding their unique challenges, and delivering precision-driven solutions that empower them to reach new heights.</p>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button class="btn-secondary modal-close" id="close-precision" data-key="modal_close">X Close</button>
-            </div>
-        </div>
-      </div>
-
-      <!-- Modal for CNC -->
-      <div id="modal-cnc" class="modal-overlay-b">
-        <div class="modal-content-b">
-          <div class="modal-content-top">
-            <div class="modal-header-b">
-              <img src="assets/img/cnc.webp" alt="CNC Machine">
-              <div class="modal-body-b">
-                <h4 data-key="modal_cnc_title">CNC: 5 Axis Machining</h4>
-                <h5 data-key="modal_cnc_subtitle">High Precision</h5>
-              </div>
-            </div>
-            <div class="modal-text-content-b">
-                  <ol>
-                    <p data-key="modal_cnc_p1">At Pudak Aerospace, we utilize advanced 5-axis machining technology to deliver precision parts faster and more efficiently. Key advantages include:</p><br>
-                    <li>
-                      <strong>Faster Production</strong> - Complex components and prototypes can be produced in just 1-2 weeks instead of months.
-                    </li>
-                    <li>
-                      <strong>Higher Accuracy</strong> - Fewer setups mean less risk of alignment errors and greater machining precision.
-                    </li>
-                    <li>
-                      <strong>Better Surface Finish</strong> - Shorter cutting tools reduce vibration, improving quality and minimizing hand-finishing work.
-                    </li>
-                    <li>
-                    <strong>Design Flexibility</strong> - Complex geometries can be machined directly from solid material without the need for initial castings.
-                    </li><br>
-                    <p>
-                      With 5-axis machining, we combine speed, precision, and innovation to meet the demanding needs of aerospace manufacturing.
-                    </p>
-                  </ol>
-        </div>
-      </div>
-          <div class="modal-footer-b">
-            <button class="btn-secondary modal-close" id="close-cnc" data-key="modal_close">X Close</button>
-        </div>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+  
+  <nav class="navbar" id="navMenu">
+    <div class="nav-logo">
+      <img src="assets/img/pudak-aerospace.svg" alt="Pudak Aerospace Logo" />
+    </div>
+    <ul class="nav-links" id="navMenu">
+      <li><a href="#about" data-key="nav_about">About</a></li>
+      <li><a href="#services" data-key="nav_services">Services</a></li>
+      <li><a href="#news" data-key="nav_news">News</a></li>
+      <li><a href="#certificate" data-key="nav_certificate">Certificate</a></li>
+    </ul>
+    <div class="nav-mobile-extra nav-actions">
+      <button id="openPartner" class="btn-partner" data-key="partner_btn">Become Partner</button>
+      <div class="lang-toggle" id="langToggle">
+        <i data-lucide="globe"></i> <span class="lang-text">ID</span>
       </div>
     </div>
 
-<!-- Modal for EDM -->
-<div id="modal-edm" class="modal-overlay-b">
+    <!-- HAMBURGER -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+                      
+</nav>
+
+<section class="hero">
+    
+    <div class="hero-content">
+        <div class="hero-title animate-entry">
+            <span>WELCOME TO</span>
+            <h1>PUDAK AEROSPACE</h1>
+            <span>an <strong>AS9100</strong> Certified Company.</span>
+        </div>
+
+        <div class="philosophy-wrapper animate-entry">
+            <span class="philosophy-label">Our Philosophy</span>
+            <div class="text-rotator">
+                <ul class="rotating-list" id="philosophyList">
+                    <li>Investing in <strong> <i> People</i></strong></li>
+                    <li>Focusing on <strong> <i> Quality </i></strong></li>
+                    <li>Meeting <strong> <i>Customer</i></strong> Demand</li>
+                    <li>Investing in <strong> <i> People</i></strong></li> 
+                </ul>
+            </div>
+        </div>
+
+        <div class="hero-buttons animate-entry">
+          <a href="#services" class="btn btn-primary">
+              Explore Our Service 
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+      
+          <button id="certDesktop" class="btn btn-outline" data-key="certificate_btn">
+              Our Certificate
+          </button>
+      
+          <button id="certMobile" class="btn btn-outline btn-circle">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8.00001C20.0008 7.68312 19.9388 7.36921 19.8176 7.0764C19.6964 6.78359 19.5185 6.51768 19.294 6.29401L15.706 2.70601C15.4823 2.48153 15.2164 2.30357 14.9236 2.18239C14.6308 2.06122 14.3169 1.99923 14 2.00001H6C5.46957 2.00001 4.96086 2.21072 4.58579 2.58579C4.21071 2.96087 4 3.46957 4 4.00001V7.30001" stroke="#0076bc" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 2V7C14 7.26522 14.1054 7.51957 14.2929 7.70711C14.4804 7.89464 14.7348 8 15 8H20M7.69001 16.479L8.98001 21.359C9.00737 21.4519 9.00714 21.5508 8.97934 21.6436C8.95155 21.7364 8.89739 21.8192 8.82345 21.8818C8.74952 21.9444 8.65898 21.9842 8.56286 21.9963C8.46674 22.0084 8.36917 21.9923 8.28201 21.95L6.43901 21.101C6.3021 21.0342 6.15173 20.9996 5.99939 20.9997C5.84706 20.9999 5.69677 21.0349 5.56001 21.102L3.71401 21.952C3.62689 21.9928 3.52985 22.0076 3.43453 21.9946C3.33921 21.9817 3.24965 21.9415 3.1766 21.8789C3.10355 21.8163 3.05012 21.7339 3.02269 21.6417C2.99527 21.5495 2.99504 21.4513 3.02201 21.359L4.31201 16.479" stroke="#0076bc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6 17C7.65685 17 9 15.6569 9 14C9 12.3431 7.65685 11 6 11C4.34315 11 3 12.3431 3 14C3 15.6569 4.34315 17 6 17Z" stroke="#0076bc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              
+          </button>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+        <div class="slider-track">
+            <div class="slide active"><img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1600&q=80" alt="Tech 1"></div>
+            <div class="slide"><img src="https://images.unsplash.com/photo-1517976487492-5750f3195933?auto=format&fit=crop&w=1600&q=80" alt="Tech 2"></div>
+            <div class="slide"><img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1600&q=80" alt="Tech 3"></div>
+            <div class="slide"><img src="https://images.unsplash.com/photo-1580983218765-f663bec07b37?auto=format&fit=crop&w=1600&q=80" alt="Tech 4"></div>
+            <div class="slide"><img src="https://images.unsplash.com/photo-1517976487492-5750f3195933?auto=format&fit=crop&w=1600&q=80" alt="Tech 5"></div>
+        </div>
+    </div>
+
+    <div class="scroll-indicator" onclick="window.scrollTo({top: window.innerHeight, behavior: 'smooth'})">
+        <div class="mouse">
+            <div class="wheel"></div>
+        </div>
+        <span class="scroll-text">SCROLL</span>
+    </div>
+</section>
+
+  <!-- What We Do Section -->
+  <section class="what-we-do" id="services">
+      <div class="section-header">
+          <h2 data-key="what_we_do_title">What We Do</h2>
+          <p data-key="what_we_do_subtitle">Your partner in delivering high-performance aerospace components</p>
+      </div>
+      <div class="services-container">
+          <img src="assets/img/full-plane.webp" alt="Airplane" class="airplane-img">
+          <div class="service-item" id="service-1">
+              <div class="service-img-container">
+                  <img src="assets/img/precision-machining.webp" alt="Precision Machining">
+              </div>
+              <div class="service-text">
+                  <h3 data-key="precision_machining_title">Precision Machining</h3>
+                  <p data-key="precision_machining_subtitle">(3, 4, 5-axis, Swiss Type & EDM)</p>
+              </div>
+          </div>
+          <div class="service-item" id="service-2">
+              <div class="service-img-container">
+                  <img src="assets/img/assembly.webp" alt="Assembly">
+              </div>
+              <div class="service-text">
+                  <h3 data-key="assembly_title">Assembly</h3>
+                  <p data-key="assembly_subtitle">Basic Component of Aerospace</p>
+              </div>
+          </div>
+          <div class="service-item" id="service-3">
+              <div class="service-img-container">
+                  <img src="assets/img/surface.webp" alt="Surface Treatment">
+              </div>
+              <div class="service-text">
+                  <h3 data-key="surface_treatment_title">Surface Treatment</h3>
+                  <p data-key="assembly_subtitle">Basic Component of Aerospace</p>
+              </div>
+          </div>
+          <div class="service-item" id="service-4">
+              <div class="service-img-container">
+                  <img src="assets/img/heat.webp" alt="Heat Treatment">
+              </div>
+              <div class="service-text">
+                  <h3 data-key="heat_treatment_title">Heat Treatment</h3>
+                  <p data-key="assembly_subtitle">Basic Component of Aerospace</p>
+              </div>
+          </div>
+          <div class="service-item" id="service-5">
+              <div class="service-img-container">
+                  <img src="assets/img/quality.webp" alt="Quality Inspection">
+              </div>
+              <div class="service-text">
+                  <h3 data-key="quality_inspection_title">Quality Inspection</h3>
+                  <p data-key="assembly_subtitle">Basic Component of Aerospace</p>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Future of Manufacturing Section -->
+  <section class="future-manufacturing">
+    <div class="section-header">
+      <h2 data-key="driving_future_title">Driving the Future of Manufacturing</h2>
+      <p data-key="driving_future_subtitle">Embracing industry 4.0 with recision as our passion</p>
+    </div>
+    <div class="articles">
+      <article class="article">
+        <div class="article-image">
+          <img src="assets/img/manufacture_4.webp" alt="A laptop displaying data and charts, representing Industry 4.0.">
+        </div>
+        <div class="article-content">
+          <h3 data-key="manufacture_4_0_title">Manufacture 4.0</h3>
+          <p data-key="manufacture_4_0_p">With more than 20 years of expertise in aerospace parts manufacturing, Pudak Aerospace is embracing the future through Manufacture 4.0. Starting in mid-2024, we began integrating digitalization and automation across every division.</p>
+          <button class="btn btn-primary" id="read-more-manufacturing" data-key="read_more">Read more</button>
+        </div>
+      </article>
+      <article class="article article-reverse">
+        <div class="article-image">
+          <img src="assets/img/precision.webp" alt="A person meticulously working on a small component, representing precision.">
+        </div>
+        <div class="article-content">
+          <h3 data-key="precision_passion_title">Precision Our Passion</h3>
+          <p data-key="precision_passion_p">At Pudak Aerospace, precision is more than just a goal—it's our passion. Every step of our manufacturing process, from concept and design to production and final inspection, is driven by an uncompromising commitment to accuracy and reliability.</p>
+          <button class="btn btn-primary" id="read-more-precision" data-key="read_more">Read more</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Excellence Section -->
+  <section class="excellence-section">
+    <div class="section-header">
+      <h2 data-key="excellence_achieved_title">Excellence is Achieved</h2>
+      <p data-key="excellence_achieved_subtitle">When quality and punctuality coexist</p>
+    </div>
+    <div class="excellence-cards">
+      <div class="excellence-card">
+        <i data-lucide="shield"></i>
+        <h3 data-key="precision_title">Precision</h3>
+        <p data-key="precision_p">Micron-level accuracy in every component we manufacture</p>
+      </div>
+      <div class="excellence-card">
+        <i data-lucide="gem"></i>
+        <h3 data-key="quality_title">Quality</h3>
+        <p data-key="quality_p">International standards compliance and rigorous testing</p>
+      </div>
+      <div class="excellence-card">
+        <i data-lucide="clock-7"></i>
+        <h3 data-key="reliability_title">Reliability</h3>
+        <p data-key="reliability_p">On-time delivery rate with consistent quality</p>
+      </div>
+      <div class="excellence-card">
+        <i data-lucide="globe"></i>
+        <h3 data-key="global_reach_title">Global Reach</h3>
+        <p data-key="global_reach_p">Serving aerospace companies across 13+ countries</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section class="about-us-section">
+    <div class="about-us-container">
+      <div class="about-us-content">
+        <h2 data-key="pudak_aerospace_about_title">Pudak Aerospace</h2>
+        <p data-key="pudak_aerospace_about_p1">PT. Pudak Scientific is ready to provide service for the best precision part machining as according to the international standards.</p>
+        <p data-key="pudak_aerospace_about_p2">With the support of modern 5-axis CNC machines, EDM (Electrical Discharge Machining), sophisticated measuring equipment, up to date knowledge and experience we ready to produce highly complicated parts with micron precision for you.</p>
+        <p data-key="pudak_aerospace_about_p3">The Quality and On-time Delivery is our main concern. We realize that it is important for every personnel to have quality conscious and cost-responsible thinking and of its implementation in every activity.</p>
+      </div>
+      <div class="about-us-image">
+        <img src="assets/img/machinist.webp" alt="Technician operating a modern 5-axis CNC machine, the NHX 4000.">
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Capabilities Section -->
+  <section class="core-capabilities">
+    <div class="capability-card" id="read-more-cnc">
+        <div class="capability-detail">High Precision</div>
+        <div class="capability-footer">
+          <div class="capability-label">CNC</div>
+          <div class="capability-title">5 Axis Machining</div>
+        </div>
+      <div class="capability-image-wrapper">
+        <img src="assets/img/cnc.webp" alt="CNC Machining">
+      </div>
+    </div>
+  
+    <div class="capability-card" id="read-more-edm">
+      <div class="capability-detail">Complex Geometry</div>
+      <div class="capability-footer">
+        <div class="capability-label">EDM</div>
+        <div class="capability-title">Electrical Discharge Machining</div>
+      </div>
+      <div class="capability-image-wrapper">
+        <img src="assets/img/edm.webp" alt="EDM (Electrical Discharge Machining)">
+      </div>
+    </div>
+  
+    <div class="capability-card" id="read-more-mpi">
+      <div class="capability-detail">Quality Control</div>
+      <div class="capability-footer">
+        <div class="capability-label">MPI</div>
+        <div class="capability-title">Magnetic Particle Inspection</div>
+      </div>
+      <div class="capability-image-wrapper">
+        <img src="assets/img/mpi.webp" alt="MPI (Magnetic Particle Inspection)">
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Partners Section -->
+  <section class="partners-section">
+      <div class="section-header">
+          <h2 data-key="valued_partners_title">Our Valued Partners</h2>
+          <p data-key="valued_partners_p">Strong relationships built on trust, quality, and proven performance.</p>
+      </div>
+      <div class="partners-grid">
+          <img src="assets/icons/collins.webp" alt="Collins Aerospace">
+          <img src="assets/icons/boeing.webp" alt="Boeing">
+          <img src="assets/icons/jabil.svg" alt="Jabil">
+          <img src="assets/icons/meggitt.webp" alt="Meggitt">
+          <img src="assets/icons/crane.webp" alt="Crane Aerospace & Electronics">
+          <img src="assets/icons/signia.webp" alt="Signia Aerospace">
+          <img src="assets/icons/safran.svg" alt="Safran">
+          <img src="assets/icons/tusas.webp" alt="Turkish Aerospace">
+          <img src="assets/icons/uac.webp" alt="Universal Alloy Corporation">
+          <img src="assets/icons/iae.webp" alt="Indonesian Aerospace (IAe)">
+      </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-contact-section">
+        <div class="footer-contact-info">
+            <h2 data-key="ready_to_work_title">Ready to Work Together?</h2>
+            <p data-key="ready_to_work_p">Contact us today to discuss your aerospace needs and discover how we can help bring your project to life.</p>
+            <ul>
+                <li><i data-lucide="map-pin"></i> <span data-key="contact_address">Jl. Mekar Raya Kav. 12, Bandung 40614 - Indonesia</span></li>
+                <li><i data-lucide="phone"></i> +62 22-726-543-235</li>
+                <li><i data-lucide="mail"></i> info.pudakscientific.com</li>
+            </ul>
+        </div>
+        <div class="footer-contact-form">
+            <h3 data-key="get_in_touch">Get in Touch</h3>
+            <form action="https://formspree.io/f/myzpokrw" method="POST">
+                <div class="form-row">
+                    <input type="text" name="name" data-key="form_name" placeholder="Name" required>
+                    <input type="text" name="company" data-key="form_company" placeholder="Company" required>
+                </div>
+                <input type="email" name="email" data-key="form_email" placeholder="Email Address" required>
+                <textarea name="message" data-key="form_message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn btn-primary" data-key="send_message">Send Message</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-main-container">
+      <div class="footer-main">
+          <div class="footer-about">
+              <img src="assets/img/pudak-aerospace.svg" alt="Pudak Aerospace Logo">
+              <p data-key="footer_about_p">PT Pudak Scientific is an established and rapidly expanding company specializing in the manufacturing of high-precision aerospace components.</p>
+              <div class="footer-social">
+                  <a href="https://id.linkedin.com/company/pudak-scientific"><i data-lucide="linkedin"></i> <span>LinkedIn</span></a>
+                  <a href="https://www.facebook.com/PudakScientific/"><i data-lucide="facebook"></i> <span>Facebook</span></a>
+              </div>
+          </div>
+          <div class="footer-links">
+              <ul>
+                <h4 data-key="service_footer_title">Service</h4>
+                  <li><a href="#" data-key="cnc_machining">CNC Machining</a></li>
+                  <li><a href="#" data-key="edm_services">EDM Services</a></li>
+                  <li><a href="#" data-key="quality_inspection_footer">Quality Inspection</a></li>
+                  <li><a href="#" data-key="custom_manufacturing">Custom Manufacturing</a></li>
+              </ul>
+          </div>
+          <div class="footer-links">
+              <ul>
+                <h4 data-key="industries_title">Industries</h4>
+                  <li><a href="#" data-key="commercial_aviation">Commercial Aviation</a></li>
+                  <li><a href="#" data-key="defense_military">Defense & Military</a></li>
+                  <li><a href="#" data-key="space_technology">Space Technology</a></li>
+                  <li><a href="#" data-key="general_aviation">General Aviation</a></li>
+              </ul>
+          </div>
+          <div class="footer-links">
+              <ul>
+                <h4 data-key="company_footer_title">Company</h4>
+                  <li><a href="#" data-key="about_us_footer">About Us</a></li>
+                  <li><a href="#" data-key="services_footer">Services</a></li>
+                  <li><a href="#" data-key="news_footer">News</a></li>
+                  <li><a href="#" data-key="certificate_footer">Certificate</a></li>
+              </ul>
+          </div>
+          <div class="footer-certifications">
+              <h4 data-key="certifications_for_title">Certifications for<br><span>Pudak Aerospace</span></h4>
+            <a>
+              <img src="assets/img/as9100d.svg" alt="AS9100 Certification">
+            </a>
+            <a>
+              <img src="assets/img/nadcap.svg" alt="Nadcap Certification">
+            </a>
+            <a>
+              <img src="assets/img/nadcap-ndt.svg" alt="Nadcap NDT Certification">
+            </a>
+              <a href="#" class="back-to-top" data-key="back_to_top"> Back to top ⤴</a>
+          </div>
+          </div>
+        <div class="horizontal__line"></div>
+        <div class="footer-bottom">
+            <p data-key="copyright">PT PUDAK SCIENTIFIC © 2025 All Rights Reserved</p>
+      </div>
+  </div>
+</footer>
+
+<!-- Modal for Manufacturing 4.0 -->
+<div id="modal-manufacturing" class="modal-overlay">
+    <div class="modal-content">
+        <div class="modal-header">
+            <img src="assets/img/manufacture_4.webp" alt="Manufacturing 4.0">
+        </div>
+        <div class="modal-body">
+            <h2 data-key="modal_manufacture_title">Manufacture 4.0</h2>
+            <h3 data-key="modal_manufacture_subtitle">Driving the Future of Smart Manufacturing</h3>
+            <div class="modal-text-content">
+              <p data-key="modal_manufacture_p1">With more than 20 years of expertise in aerospace parts manufacturing, Pudak Aerospace is embracing the future through Manufacture 4.0. Starting in mid-2024, we began integrating digitalization and automation across every division, step by step, to transform our operations. This shift toward smart manufacturing enables us to improve efficiency, precision, and innovation at every stage of production. Our goal is to fully modernize our processes, ensuring we stay ahead in the aerospace industry while delivering superior quality and performance for our customers.</p>
+              <p data-key="modal_manufacture_p2">Our journey toward digital transformation is powered by two key innovations:</p>
+            </div>
+            <div class="modal-text-content-2">
+              <div>
+                <h4 data-key="modal_manufacture_h4_1">Odoo ERP Integration</h4>
+                <p data-key="modal_manufacture_p3">We have implemented Odoo as our central digital platform to streamline operations, improve efficiency, and ensure real-time data visibility across all departments.</p>
+              </div>
+              <div>
+                <h4 data-key="modal_manufacture_h4_2">Sentry: Our Digital Transformation Platform</h4>
+                <p data-key="modal_manufacture_p4">To further support modern manufacturing, we developed Sentry, a proprietary platform designed to enhance connectivity, improve workflow automation, and drive continuous improvement across our processes.</p>
+              </div>
+            </div>
+            <p data-key="modal_manufacture_p5">By combining Odoo ERP and Sentry, we are shaping a smarter, more efficient, and environmentally responsible future for our manufacturing operations.</p>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-outline modal-close" id="close-manufacturing" data-key="modal_close">X Close</button>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Precision Our Passion -->
+<div id="modal-precision" class="modal-overlay">
+  <div class="modal-content">
+      <div class="modal-header">
+          <img src="assets/img/precision.webp" alt="Precision Our Passion">
+      </div>
+      <div class="modal-body">
+          <h2 data-key="modal_precision_title">Precision Our Passion</h2>
+          <h3 data-key="modal_precision_subtitle">Passion</h3>
+          <div class="modal-text-content">
+            <p data-key="modal_precision_p1">At Pudak Aerospace, precision is more than just a goal—it's our passion. Every step of our manufacturing process, from concept and design to production and final inspection, is driven by an uncompromising commitment to accuracy and reliability, ensuring every aerospace part we produce exceeds industry standards.</p>
+            <p data-key="modal_precision_p2">Embracing the era of Industry 4.0, we integrate cutting-edge digital technologies such as advanced CAD/CAM systems, real-time data monitoring, and automated quality control to enhance every aspect of production. These innovations allow us to achieve unmatched consistency, reduce lead times, and maintain full traceability across the manufacturing cycle.</p>
+            <p data-key="modal_precision_p3">By combining our engineering expertise with digitalization, we not only improve efficiency but also ensure that each component meets the rigorous demands of modern aerospace engineering. This forward-thinking approach enables us to deliver solutions that not only meet today's requirements but also anticipate the needs of tomorrow's aerospace industry.</p>
+            <p data-key="modal_precision_p4">Above all, our mission goes beyond manufacturing. We are dedicated to building long-term partnerships with our clients, understanding their unique challenges, and delivering precision-driven solutions that empower them to reach new heights.</p>
+          </div>
+      </div>
+      <div class="modal-footer">
+          <button class="btn btn-outline modal-close" id="close-precision" data-key="modal_close">X Close</button>
+      </div>
+  </div>
+</div>
+
+<!-- Modal for CNC -->
+<div id="modal-cnc" class="modal-overlay-b">
   <div class="modal-content-b">
     <div class="modal-content-top">
       <div class="modal-header-b">
-        <img src="assets/img/edm.webp" alt="EDM Machine">
+        <img src="assets/img/cnc.webp" alt="CNC Machine">
         <div class="modal-body-b">
-          <h4 data-key="modal_edm_title">EDM (Electrical Discharge Machining)</h4>
-          <h5 data-key="modal_edm_subtitle">Complex Geometry</h5>
+          <h4 data-key="modal_cnc_title">CNC: 5 Axis Machining</h4>
+          <h5 data-key="modal_cnc_subtitle">High Precision</h5>
         </div>
       </div>
       <div class="modal-text-content-b">
-            <ul>
-              <p data-key="modal_edm_p1">At Pudak Aerospace, we use advanced Electrical Discharge Machining (EDM) technology to produce high-precision components with complex shapes that traditional machining cannot achieve. EDM uses controlled electrical discharges to erode the material, creating intricate details with exceptional accuracy.</p><br>
-              <p>
-                <strong>EDM Capabilities</strong>
-              </p>
-                <li>Wire EDM - Perfect for precision tools and dies, using a thin wire electrode to cut complex shapes.</li>
-                <li>Ideal for plastic molds and deep cavities, using custom-shaped electrodes to form intricate details.</li>
+            <ol>
+              <p data-key="modal_cnc_p1">At Pudak Aerospace, we utilize advanced 5-axis machining technology to deliver precision parts faster and more efficiently. Key advantages include:</p><br>
+              <li>
+                <strong>Faster Production</strong> - Complex components and prototypes can be produced in just 1-2 weeks instead of months.
+              </li>
+              <li>
+                <strong>Higher Accuracy</strong> - Fewer setups mean less risk of alignment errors and greater machining precision.
+              </li>
+              <li>
+                <strong>Better Surface Finish</strong> - Shorter cutting tools reduce vibration, improving quality and minimizing hand-finishing work.
+              </li>
+              <li>
+              <strong>Design Flexibility</strong> - Complex geometries can be machined directly from solid material without the need for initial castings.
               </li><br>
               <p>
-                <strong>HQSF Technology by Makino</strong>
+                With 5-axis machining, we combine speed, precision, and innovation to meet the demanding needs of aerospace manufacturing.
               </p>
-              <p>
-                Our High Quality Surface Finish (HQSF) technology enhances EDM performance by using a special dielectric fluid additive, producing surfaces far smoother than conventional EDM methods.
-              </p>
-            </ul>
+            </ol>
   </div>
 </div>
     <div class="modal-footer-b">
-      <button class="btn-secondary modal-close" id="close-edm" data-key="modal_close">X Close</button>
+      <button class="btn btn-outline modal-close" id="close-cnc" data-key="modal_close">X Close</button>
   </div>
+</div>
+</div>
+
+<!-- Modal for EDM -->
+<div id="modal-edm" class="modal-overlay-b">
+<div class="modal-content-b">
+<div class="modal-content-top">
+<div class="modal-header-b">
+  <img src="assets/img/edm.webp" alt="EDM Machine">
+  <div class="modal-body-b">
+    <h4 data-key="modal_edm_title">EDM (Electrical Discharge Machining)</h4>
+    <h5 data-key="modal_edm_subtitle">Complex Geometry</h5>
+  </div>
+</div>
+<div class="modal-text-content-b">
+      <ul>
+        <p data-key="modal_edm_p1">At Pudak Aerospace, we use advanced Electrical Discharge Machining (EDM) technology to produce high-precision components with complex shapes that traditional machining cannot achieve. EDM uses controlled electrical discharges to erode the material, creating intricate details with exceptional accuracy.</p><br>
+        <p>
+          <strong>EDM Capabilities</strong>
+        </p>
+          <li>Wire EDM - Perfect for precision tools and dies, using a thin wire electrode to cut complex shapes.</li>
+          <li>Ideal for plastic molds and deep cavities, using custom-shaped electrodes to form intricate details.</li>
+        </li><br>
+        <p>
+          <strong>HQSF Technology by Makino</strong>
+        </p>
+        <p>
+          Our High Quality Surface Finish (HQSF) technology enhances EDM performance by using a special dielectric fluid additive, producing surfaces far smoother than conventional EDM methods.
+        </p>
+      </ul>
+</div>
+</div>
+<div class="modal-footer-b">
+<button class="btn btn-outline modal-close" id="close-edm" data-key="modal_close">X Close</button>
+</div>
 </div>
 </div>
 
 <!-- Modal for MPI -->
 <div id="modal-mpi" class="modal-overlay-b">
-  <div class="modal-content-b">
-    <div class="modal-content-top">
-      <div class="modal-header-b">
-        <img src="assets/img/mpi.webp" alt="MPI Method">
-        <div class="modal-body-b">
-          <h4 data-key="modal_mpi_title">MPI (Magnetic Particle Inspection)</h4>
-          <h5 data-key="modal_mpi_subtitle">Quality Control</h5>
-        </div>
-      </div>
-      <div class="modal-text-content-b">
-            <ul>
-              <p data-key="modal_mpi_p1">At Pudak Aerospace, ensuring the integrity and reliability of every component is paramount. Magnetic Particle Inspection (MPI) is a critical nondestructive testing (NDT) method we employ to detect surface and near-surface discontinuities in ferromagnetic materials such as iron, nickel, cobalt, and their alloy.</p><br>
-              <li>
-                <strong>Direct Magnetization</strong> -  An electric current is passed directly through the component, generating a magnetic field within the material. The magnetic lines of force are oriented perpendicular to the current flow and may utilize alternating current (AC) or direct current (DC).
-              </li>
-              <li>
-                  <strong>Indirect Magnetization</strong> -  A magnetic field is applied externally without passing current through the component, magnetizing it indirectly.
-                </li>
-
-            </ul>
+<div class="modal-content-b">
+<div class="modal-content-top">
+<div class="modal-header-b">
+  <img src="assets/img/mpi.webp" alt="MPI Method">
+  <div class="modal-body-b">
+    <h4 data-key="modal_mpi_title">MPI (Magnetic Particle Inspection)</h4>
+    <h5 data-key="modal_mpi_subtitle">Quality Control</h5>
   </div>
 </div>
-    <div class="modal-footer-b">
-      <button class="btn-secondary modal-close" id="close-mpi" data-key="modal_close">X Close</button>
-  </div>
+<div class="modal-text-content-b">
+      <ul>
+        <p data-key="modal_mpi_p1">At Pudak Aerospace, ensuring the integrity and reliability of every component is paramount. Magnetic Particle Inspection (MPI) is a critical nondestructive testing (NDT) method we employ to detect surface and near-surface discontinuities in ferromagnetic materials such as iron, nickel, cobalt, and their alloy.</p><br>
+        <li>
+          <strong>Direct Magnetization</strong> -  An electric current is passed directly through the component, generating a magnetic field within the material. The magnetic lines of force are oriented perpendicular to the current flow and may utilize alternating current (AC) or direct current (DC).
+        </li>
+        <li>
+            <strong>Indirect Magnetization</strong> -  A magnetic field is applied externally without passing current through the component, magnetizing it indirectly.
+          </li>
+
+      </ul>
+</div>
+</div>
+<div class="modal-footer-b">
+<button class="btn btn-outline modal-close" id="close-mpi" data-key="modal_close">X Close</button>
+</div>
 </div>
 </div>
 
 
 <!-- Certificate Modal -->
 <div id="certificateModal" class="modal-overlay">
-  <div class="modal-content-c">
-    <span id="closeCertificate" class="close-btn">&times;</span>
-    <h2 data-key="">Pudak's Certification</h2>
-    <p class="modal-subtitle">Proof of Our Commitment to Quality</p>
-    <div class="certificate-grid">
-      <div class="certificate-item">
-        <p>LRQA Certificate for</p>
-        <h4>AS9100D</h4>
-        <img src="assets/img/as9100d-cer.webp" alt="AS9100 Certification">
-      </div>
-      <div class="certificate-item">
-        <p>Nadcap Certificate for</p>
-        <h4>Nonconventional Machining</h4>
-        <img src="assets/img/ncm.webp" alt="Nadcap Certification">
-      </div>
-      <div class="certificate-item">
-        <p>Nadcap Certificate for</p>
-        <h4>Nondestructive Testing</h4>
-        <img src="assets/img/ndt.webp" alt="Nadcap NDT Certification">
-      </div>
-    </div>
-    <a href="certification.html" class="modal-link">Go to certification page &gt;&gt;</a>
-  </div>
+<div class="modal-content-c">
+<span id="closeCertificate" class="btn-close">&times;</span>
+<h2 data-key="">Pudak's Certification</h2>
+<p class="modal-subtitle">Proof of Our Commitment to Quality</p>
+<div class="certificate-grid">
+<div class="certificate-item">
+  <p>LRQA Certificate for</p>
+  <h4>AS9100D</h4>
+  <img src="assets/img/as9100d-cer.webp" alt="AS9100 Certification">
+</div>
+<div class="certificate-item">
+  <p>Nadcap Certificate for</p>
+  <h4>Nonconventional Machining</h4>
+  <img src="assets/img/ncm.webp" alt="Nadcap Certification">
+</div>
+<div class="certificate-item">
+  <p>Nadcap Certificate for</p>
+  <h4>Nondestructive Testing</h4>
+  <img src="assets/img/ndt.webp" alt="Nadcap NDT Certification">
+</div>
+</div>
+<a href="certification.html" class="modal-link">Go to certification page &gt;&gt;</a>
+</div>
 </div>
 
 
 
 <!-- Modal Become Partner -->
 <div id="partnerModal" class="modal-overlay-b">
-  <div class="partner-modal-content">
-    <span id="closePartnerModal" class="close-btn">&times;</span>
-    <div class="partner-modal-grid">
-      
-      <!-- Left Image -->
-      <div class="partner-modal-image">
-        <img src="assets/img/plane-side.webp" alt="Airplane">
-      </div>
+<div class="partner-modal-content">
+<span id="closePartnerModal" class="btn-close">&times;</span>
+<div class="partner-modal-grid">
 
-      <!-- Right Form -->
-      <div class="partner-modal-form">
-        <h2>Let's Connect!</h2>
-        <p class="subtitle">Fulfill your thought</p>
-        
-        <form action="https://formspree.io/f/myzpokrw" method="POST">
-          <div class="form-row">
-            <input type="text" name="name" placeholder="Name" required>
-            <input type="text" name="company" placeholder="Company" required>
+<!-- Left Image -->
+<div class="partner-modal-image">
+  <img src="assets/img/plane-side.webp" alt="Airplane">
+</div>
+
+<!-- Right Form -->
+<div class="partner-modal-form">
+  <h2>Let's Connect!</h2>
+  <p class="subtitle">Fulfill your thought</p>
+  
+  <form action="https://formspree.io/f/myzpokrw" method="POST">
+    <div class="form-row">
+      <input type="text" name="name" placeholder="Name" required>
+      <input type="text" name="company" placeholder="Company" required>
+    </div>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="text" name="subject" placeholder="Subject" required>
+    <textarea name="message" placeholder="Messages" required></textarea>
+    <button type="submit" class="btn btn-primary" >Send Message</button>
+  </form>
+</div>
+
+<script>
+  lucide.createIcons();
+</script>
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+
+<!-- Modal for Manufacturing 4.0 -->
+<div id="modal-manufacturing" class="modal-overlay">
+  <div class="modal-content">
+      <div class="modal-header">
+          <img src="assets/img/manufacture_4.webp" alt="Manufacturing 4.0">
+      </div>
+      <div class="modal-body">
+          <h2 data-key="modal_manufacture_title">Manufacture 4.0</h2>
+          <h3 data-key="modal_manufacture_subtitle">Driving the Future of Smart Manufacturing</h3>
+          <div class="modal-text-content">
+            <p data-key="modal_manufacture_p1">With more than 20 years of expertise in aerospace parts manufacturing, Pudak Aerospace is embracing the future through Manufacture 4.0. Starting in mid-2024, we began integrating digitalization and automation across every division, step by step, to transform our operations. This shift toward smart manufacturing enables us to improve efficiency, precision, and innovation at every stage of production. Our goal is to fully modernize our processes, ensuring we stay ahead in the aerospace industry while delivering superior quality and performance for our customers.</p>
+            <p data-key="modal_manufacture_p2">Our journey toward digital transformation is powered by two key innovations:</p>
           </div>
-          <input type="email" name="email" placeholder="Email" required>
-          <input type="text" name="subject" placeholder="Subject" required>
-          <textarea name="message" placeholder="Messages" required></textarea>
-          <button type="submit" class="btn-primary" >Send Message</button>
-        </form>
+          <div class="modal-text-content-2">
+            <div>
+              <h4 data-key="modal_manufacture_h4_1">Odoo ERP Integration</h4>
+              <p data-key="modal_manufacture_p3">We have implemented Odoo as our central digital platform to streamline operations, improve efficiency, and ensure real-time data visibility across all departments.</p>
+            </div>
+            <div>
+              <h4 data-key="modal_manufacture_h4_2">Sentry: Our Digital Transformation Platform</h4>
+              <p data-key="modal_manufacture_p4">To further support modern manufacturing, we developed Sentry, a proprietary platform designed to enhance connectivity, improve workflow automation, and drive continuous improvement across our processes.</p>
+            </div>
+          </div>
+          <p data-key="modal_manufacture_p5">By combining Odoo ERP and Sentry, we are shaping a smarter, more efficient, and environmentally responsible future for our manufacturing operations.</p>
       </div>
+      <div class="modal-footer">
+          <button class="btn btn-outline modal-close" id="close-manufacturing" data-key="modal_close">X Close</button>
+      </div>
+  </div>
+</div>
 
-      <script>
-        lucide.createIcons();
-      </script>
-        <script src="js/script.js"></script>
-      </body>
-      </html>
+<!-- Modal for Precision Our Passion -->
+<div id="modal-precision" class="modal-overlay">
+<div class="modal-content">
+    <div class="modal-header">
+        <img src="assets/img/precision.webp" alt="Precision Our Passion">
+    </div>
+    <div class="modal-body">
+        <h2 data-key="modal_precision_title">Precision Our Passion</h2>
+        <h3 data-key="modal_precision_subtitle">Passion</h3>
+        <div class="modal-text-content">
+          <p data-key="modal_precision_p1">At Pudak Aerospace, precision is more than just a goal—it's our passion. Every step of our manufacturing process, from concept and design to production and final inspection, is driven by an uncompromising commitment to accuracy and reliability, ensuring every aerospace part we produce exceeds industry standards.</p>
+          <p data-key="modal_precision_p2">Embracing the era of Industry 4.0, we integrate cutting-edge digital technologies such as advanced CAD/CAM systems, real-time data monitoring, and automated quality control to enhance every aspect of production. These innovations allow us to achieve unmatched consistency, reduce lead times, and maintain full traceability across the manufacturing cycle.</p>
+          <p data-key="modal_precision_p3">By combining our engineering expertise with digitalization, we not only improve efficiency but also ensure that each component meets the rigorous demands of modern aerospace engineering. This forward-thinking approach enables us to deliver solutions that not only meet today's requirements but also anticipate the needs of tomorrow's aerospace industry.</p>
+          <p data-key="modal_precision_p4">Above all, our mission goes beyond manufacturing. We are dedicated to building long-term partnerships with our clients, understanding their unique challenges, and delivering precision-driven solutions that empower them to reach new heights.</p>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-outline modal-close" id="close-precision" data-key="modal_close">X Close</button>
+    </div>
+</div>
+</div>
+
+<!-- Modal for CNC -->
+<div id="modal-cnc" class="modal-overlay-b">
+<div class="modal-content-b">
+  <div class="modal-content-top">
+    <div class="modal-header-b">
+      <img src="assets/img/cnc.webp" alt="CNC Machine">
+      <div class="modal-body-b">
+        <h4 data-key="modal_cnc_title">CNC: 5 Axis Machining</h4>
+        <h5 data-key="modal_cnc_subtitle">High Precision</h5>
+      </div>
+    </div>
+    <div class="modal-text-content-b">
+          <ol>
+            <p data-key="modal_cnc_p1">At Pudak Aerospace, we utilize advanced 5-axis machining technology to deliver precision parts faster and more efficiently. Key advantages include:</p><br>
+            <li>
+              <strong>Faster Production</strong> - Complex components and prototypes can be produced in just 1-2 weeks instead of months.
+            </li>
+            <li>
+              <strong>Higher Accuracy</strong> - Fewer setups mean less risk of alignment errors and greater machining precision.
+            </li>
+            <li>
+              <strong>Better Surface Finish</strong> - Shorter cutting tools reduce vibration, improving quality and minimizing hand-finishing work.
+            </li>
+            <li>
+            <strong>Design Flexibility</strong> - Complex geometries can be machined directly from solid material without the need for initial castings.
+            </li><br>
+            <p>
+              With 5-axis machining, we combine speed, precision, and innovation to meet the demanding needs of aerospace manufacturing.
+            </p>
+          </ol>
+</div>
+</div>
+  <div class="modal-footer-b">
+    <button class="btn btn-outline modal-close" id="close-cnc" data-key="modal_close">X Close</button>
+</div>
+</div>
+</div>
+
+<!-- Modal for EDM -->
+<div id="modal-edm" class="modal-overlay-b">
+<div class="modal-content-b">
+<div class="modal-content-top">
+<div class="modal-header-b">
+<img src="assets/img/edm.webp" alt="EDM Machine">
+<div class="modal-body-b">
+  <h4 data-key="modal_edm_title">EDM (Electrical Discharge Machining)</h4>
+  <h5 data-key="modal_edm_subtitle">Complex Geometry</h5>
+</div>
+</div>
+<div class="modal-text-content-b">
+    <ul>
+      <p data-key="modal_edm_p1">At Pudak Aerospace, we use advanced Electrical Discharge Machining (EDM) technology to produce high-precision components with complex shapes that traditional machining cannot achieve. EDM uses controlled electrical discharges to erode the material, creating intricate details with exceptional accuracy.</p><br>
+      <p>
+        <strong>EDM Capabilities</strong>
+      </p>
+        <li>Wire EDM - Perfect for precision tools and dies, using a thin wire electrode to cut complex shapes.</li>
+        <li>Ideal for plastic molds and deep cavities, using custom-shaped electrodes to form intricate details.</li>
+      </li><br>
+      <p>
+        <strong>HQSF Technology by Makino</strong>
+      </p>
+      <p>
+        Our High Quality Surface Finish (HQSF) technology enhances EDM performance by using a special dielectric fluid additive, producing surfaces far smoother than conventional EDM methods.
+      </p>
+    </ul>
+</div>
+</div>
+<div class="modal-footer-b">
+<button class="btn btn-outline modal-close" id="close-edm" data-key="modal_close">X Close</button>
+</div>
+</div>
+</div>
+
+<!-- Modal for MPI -->
+<div id="modal-mpi" class="modal-overlay-b">
+<div class="modal-content-b">
+<div class="modal-content-top">
+<div class="modal-header-b">
+<img src="assets/img/mpi.webp" alt="MPI Method">
+<div class="modal-body-b">
+  <h4 data-key="modal_mpi_title">MPI (Magnetic Particle Inspection)</h4>
+  <h5 data-key="modal_mpi_subtitle">Quality Control</h5>
+</div>
+</div>
+<div class="modal-text-content-b">
+    <ul>
+      <p data-key="modal_mpi_p1">At Pudak Aerospace, ensuring the integrity and reliability of every component is paramount. Magnetic Particle Inspection (MPI) is a critical nondestructive testing (NDT) method we employ to detect surface and near-surface discontinuities in ferromagnetic materials such as iron, nickel, cobalt, and their alloy.</p><br>
+      <li>
+        <strong>Direct Magnetization</strong> -  An electric current is passed directly through the component, generating a magnetic field within the material. The magnetic lines of force are oriented perpendicular to the current flow and may utilize alternating current (AC) or direct current (DC).
+      </li>
+      <li>
+          <strong>Indirect Magnetization</strong> -  A magnetic field is applied externally without passing current through the component, magnetizing it indirectly.
+        </li>
+
+    </ul>
+</div>
+</div>
+<div class="modal-footer-b">
+<button class="btn btn-outline modal-close" id="close-mpi" data-key="modal_close">X Close</button>
+</div>
+</div>
+</div>
+
+
+<!-- Certificate Modal -->
+<div id="certificateModal" class="modal-overlay">
+<div class="modal-content-c">
+<span id="closeCertificate" class="btn-close">&times;</span>
+<h2 data-key="">Pudak's Certification</h2>
+<p class="modal-subtitle">Proof of Our Commitment to Quality</p>
+<div class="certificate-grid">
+<div class="certificate-item">
+<p>LRQA Certificate for</p>
+<h4>AS9100D</h4>
+<img src="assets/img/as9100d-cer.webp" alt="AS9100 Certification">
+</div>
+<div class="certificate-item">
+<p>Nadcap Certificate for</p>
+<h4>Nonconventional Machining</h4>
+<img src="assets/img/ncm.webp" alt="Nadcap Certification">
+</div>
+<div class="certificate-item">
+<p>Nadcap Certificate for</p>
+<h4>Nondestructive Testing</h4>
+<img src="assets/img/ndt.webp" alt="Nadcap NDT Certification">
+</div>
+</div>
+<a href="certification.html" class="modal-link">Go to certification page &gt;&gt;</a>
+</div>
+</div>
+
+
+
+<!-- Modal Become Partner -->
+<div id="partnerModal" class="modal-overlay-b">
+<div class="partner-modal-content">
+<span id="closePartnerModal" class="btn-close">&times;</span>
+<div class="partner-modal-grid">
+
+<!-- Left Image -->
+<div class="partner-modal-image">
+<img src="assets/img/plane-side.webp" alt="Airplane">
+</div>
+
+<!-- Right Form -->
+<div class="partner-modal-form">
+<h2>Let's Connect!</h2>
+<p class="subtitle">Fulfill your thought</p>
+
+<form action="https://formspree.io/f/myzpokrw" method="POST">
+  <div class="form-row">
+    <input type="text" name="name" placeholder="Name" required>
+    <input type="text" name="company" placeholder="Company" required>
+  </div>
+  <input type="email" name="email" placeholder="Email" required>
+  <input type="text" name="subject" placeholder="Subject" required>
+  <textarea name="message" placeholder="Messages" required></textarea>
+  <button type="submit" class="btn btn-primary" >Send Message</button>
+</form>
+</div>
